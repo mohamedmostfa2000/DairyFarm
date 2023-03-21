@@ -43,9 +43,9 @@ namespace DairyFarm
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +78,7 @@ namespace DairyFarm
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(410, 317);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 46);
+            this.label2.Size = new System.Drawing.Size(172, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "UserName";
             // 
@@ -89,7 +89,7 @@ namespace DairyFarm
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(410, 405);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 46);
+            this.label3.Size = new System.Drawing.Size(155, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
@@ -116,13 +116,14 @@ namespace DairyFarm
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(584, 580);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 46);
+            this.label4.Size = new System.Drawing.Size(98, 45);
             this.label4.TabIndex = 7;
             this.label4.Text = "Reset";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(514, 499);
@@ -143,6 +144,7 @@ namespace DairyFarm
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(223, 53);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.Text = "Select Role";
             // 
             // label5
             // 
@@ -184,7 +186,7 @@ namespace DairyFarm
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.Location = new System.Drawing.Point(81, 94);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 46);
+            this.label8.Size = new System.Drawing.Size(0, 45);
             this.label8.TabIndex = 10;
             // 
             // panel1
@@ -203,38 +205,38 @@ namespace DairyFarm
             this.panel1.Size = new System.Drawing.Size(369, 657);
             this.panel1.TabIndex = 0;
             // 
-            // label9
+            // label11
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label9.Location = new System.Drawing.Point(81, 226);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(202, 46);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Nice Quality";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label11.Location = new System.Drawing.Point(55, 363);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(254, 45);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Proffessionalism";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label10.Location = new System.Drawing.Point(81, 301);
+            this.label10.Location = new System.Drawing.Point(55, 292);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(219, 46);
+            this.label10.Size = new System.Drawing.Size(213, 45);
             this.label10.TabIndex = 11;
             this.label10.Text = "Echo Friendly";
             // 
-            // label11
+            // label9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label11.Location = new System.Drawing.Point(81, 371);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(262, 46);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Proffessionalism";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label9.Location = new System.Drawing.Point(55, 225);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(198, 45);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Nice Quality";
             // 
             // Login
             // 

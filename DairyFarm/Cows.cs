@@ -8,13 +8,11 @@ using System.Windows.Forms;
 
 namespace DairyFarm
 {
-    public partial class Login : Form
+    public partial class Cows : Form
     {
-        public Login()
+        public Cows()
         {
             InitializeComponent();
         }
-
-       
     }
 }
