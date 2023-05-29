@@ -96,6 +96,7 @@ namespace DairyFarm
             this.label9.Size = new System.Drawing.Size(97, 45);
             this.label9.TabIndex = 10;
             this.label9.Text = "Cows";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox2
             // 
@@ -219,6 +220,7 @@ namespace DairyFarm
             this.label11.Size = new System.Drawing.Size(213, 38);
             this.label11.TabIndex = 10;
             this.label11.Text = "Milk Production";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // pictureBox4
             // 
@@ -249,6 +251,7 @@ namespace DairyFarm
             this.label18.Size = new System.Drawing.Size(131, 45);
             this.label18.TabIndex = 10;
             this.label18.Text = "Finance";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // pictureBox5
             // 
@@ -280,6 +283,7 @@ namespace DairyFarm
             this.label19.Size = new System.Drawing.Size(104, 41);
             this.label19.TabIndex = 10;
             this.label19.Text = "Health";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // pictureBox6
             // 
@@ -310,6 +314,7 @@ namespace DairyFarm
             this.label20.Size = new System.Drawing.Size(137, 41);
             this.label20.TabIndex = 10;
             this.label20.Text = "Breeding";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // pictureBox7
             // 
@@ -340,6 +345,7 @@ namespace DairyFarm
             this.label21.Size = new System.Drawing.Size(165, 45);
             this.label21.TabIndex = 10;
             this.label21.Text = "Milk Sales";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // pictureBox8
             // 
