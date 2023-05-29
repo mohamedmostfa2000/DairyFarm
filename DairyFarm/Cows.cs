@@ -96,5 +96,11 @@ namespace DairyFarm
                 }
             }
         }
+
+        private void DOBDate_ValueChanged(object sender, EventArgs e)
+        {
+            age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
+
+        }
     }
 }
