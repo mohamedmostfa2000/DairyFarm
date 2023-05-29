@@ -29,20 +29,20 @@ namespace DairyFarm
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -176,7 +176,7 @@ namespace DairyFarm
             // guna2TextBox1
             // 
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.CustomizableEdges = customizableEdges15;
+            this.guna2TextBox1.CustomizableEdges = customizableEdges29;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -191,7 +191,7 @@ namespace DairyFarm
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges30;
             this.guna2TextBox1.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox1.TabIndex = 6;
             // 
@@ -213,14 +213,14 @@ namespace DairyFarm
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(883, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 31);
+            this.label3.Size = new System.Drawing.Size(68, 31);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Manage Cows";
+            this.label3.Text = "Color";
             // 
             // guna2TextBox2
             // 
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.CustomizableEdges = customizableEdges17;
+            this.guna2TextBox2.CustomizableEdges = customizableEdges31;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -235,7 +235,7 @@ namespace DairyFarm
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges32;
             this.guna2TextBox2.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox2.TabIndex = 8;
             // 
@@ -246,14 +246,14 @@ namespace DairyFarm
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(1132, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 31);
+            this.label4.Size = new System.Drawing.Size(73, 31);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Manage Cows";
+            this.label4.Text = "Breed";
             // 
             // guna2TextBox3
             // 
             this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.CustomizableEdges = customizableEdges19;
+            this.guna2TextBox3.CustomizableEdges = customizableEdges33;
             this.guna2TextBox3.DefaultText = "";
             this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -268,7 +268,7 @@ namespace DairyFarm
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges34;
             this.guna2TextBox3.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox3.TabIndex = 10;
             // 
@@ -287,7 +287,7 @@ namespace DairyFarm
             // guna2TextBox4
             // 
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.CustomizableEdges = customizableEdges21;
+            this.guna2TextBox4.CustomizableEdges = customizableEdges35;
             this.guna2TextBox4.DefaultText = "";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -302,7 +302,7 @@ namespace DairyFarm
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.guna2TextBox4.ShadowDecoration.CustomizableEdges = customizableEdges36;
             this.guna2TextBox4.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox4.TabIndex = 12;
             // 
@@ -320,7 +320,7 @@ namespace DairyFarm
             // guna2TextBox5
             // 
             this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.CustomizableEdges = customizableEdges23;
+            this.guna2TextBox5.CustomizableEdges = customizableEdges37;
             this.guna2TextBox5.DefaultText = "";
             this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -335,7 +335,7 @@ namespace DairyFarm
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.guna2TextBox5.ShadowDecoration.CustomizableEdges = customizableEdges38;
             this.guna2TextBox5.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox5.TabIndex = 14;
             // 
@@ -353,7 +353,7 @@ namespace DairyFarm
             // guna2TextBox6
             // 
             this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.CustomizableEdges = customizableEdges25;
+            this.guna2TextBox6.CustomizableEdges = customizableEdges39;
             this.guna2TextBox6.DefaultText = "";
             this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -368,7 +368,7 @@ namespace DairyFarm
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderText = "";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.guna2TextBox6.ShadowDecoration.CustomizableEdges = customizableEdges40;
             this.guna2TextBox6.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox6.TabIndex = 16;
             // 
@@ -386,7 +386,7 @@ namespace DairyFarm
             // guna2TextBox7
             // 
             this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.CustomizableEdges = customizableEdges27;
+            this.guna2TextBox7.CustomizableEdges = customizableEdges41;
             this.guna2TextBox7.DefaultText = "";
             this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -401,7 +401,7 @@ namespace DairyFarm
             this.guna2TextBox7.PasswordChar = '\0';
             this.guna2TextBox7.PlaceholderText = "";
             this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.guna2TextBox7.ShadowDecoration.CustomizableEdges = customizableEdges42;
             this.guna2TextBox7.Size = new System.Drawing.Size(208, 37);
             this.guna2TextBox7.TabIndex = 18;
             // 
@@ -426,9 +426,9 @@ namespace DairyFarm
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label15.Location = new System.Drawing.Point(390, 300);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(158, 31);
+            this.label15.Size = new System.Drawing.Size(142, 31);
             this.label15.TabIndex = 21;
-            this.label15.Text = "Manage Cows";
+            this.label15.Text = "Date of Birth";
             // 
             // Cows
             // 
