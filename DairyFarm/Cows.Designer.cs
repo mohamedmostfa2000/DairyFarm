@@ -30,23 +30,23 @@ namespace DairyFarm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cows));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -433,7 +433,7 @@ namespace DairyFarm
             // CowNameTb
             // 
             this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.CustomizableEdges = customizableEdges15;
+            this.CowNameTb.CustomizableEdges = customizableEdges29;
             this.CowNameTb.DefaultText = "";
             this.CowNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.CowNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -448,7 +448,7 @@ namespace DairyFarm
             this.CowNameTb.PasswordChar = '\0';
             this.CowNameTb.PlaceholderText = "";
             this.CowNameTb.SelectedText = "";
-            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges30;
             this.CowNameTb.Size = new System.Drawing.Size(208, 37);
             this.CowNameTb.TabIndex = 6;
             // 
@@ -477,7 +477,7 @@ namespace DairyFarm
             // ColorTb
             // 
             this.ColorTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ColorTb.CustomizableEdges = customizableEdges17;
+            this.ColorTb.CustomizableEdges = customizableEdges31;
             this.ColorTb.DefaultText = "";
             this.ColorTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.ColorTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -492,7 +492,7 @@ namespace DairyFarm
             this.ColorTb.PasswordChar = '\0';
             this.ColorTb.PlaceholderText = "";
             this.ColorTb.SelectedText = "";
-            this.ColorTb.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.ColorTb.ShadowDecoration.CustomizableEdges = customizableEdges32;
             this.ColorTb.Size = new System.Drawing.Size(208, 37);
             this.ColorTb.TabIndex = 8;
             // 
@@ -510,7 +510,7 @@ namespace DairyFarm
             // BreedTb
             // 
             this.BreedTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.BreedTb.CustomizableEdges = customizableEdges19;
+            this.BreedTb.CustomizableEdges = customizableEdges33;
             this.BreedTb.DefaultText = "";
             this.BreedTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.BreedTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -525,7 +525,7 @@ namespace DairyFarm
             this.BreedTb.PasswordChar = '\0';
             this.BreedTb.PlaceholderText = "";
             this.BreedTb.SelectedText = "";
-            this.BreedTb.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.BreedTb.ShadowDecoration.CustomizableEdges = customizableEdges34;
             this.BreedTb.Size = new System.Drawing.Size(208, 37);
             this.BreedTb.TabIndex = 10;
             // 
@@ -544,7 +544,7 @@ namespace DairyFarm
             // EarTagTb
             // 
             this.EarTagTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EarTagTb.CustomizableEdges = customizableEdges21;
+            this.EarTagTb.CustomizableEdges = customizableEdges35;
             this.EarTagTb.DefaultText = "";
             this.EarTagTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.EarTagTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -559,7 +559,7 @@ namespace DairyFarm
             this.EarTagTb.PasswordChar = '\0';
             this.EarTagTb.PlaceholderText = "";
             this.EarTagTb.SelectedText = "";
-            this.EarTagTb.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.EarTagTb.ShadowDecoration.CustomizableEdges = customizableEdges36;
             this.EarTagTb.Size = new System.Drawing.Size(208, 37);
             this.EarTagTb.TabIndex = 12;
             // 
@@ -577,7 +577,7 @@ namespace DairyFarm
             // AgeTb
             // 
             this.AgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AgeTb.CustomizableEdges = customizableEdges23;
+            this.AgeTb.CustomizableEdges = customizableEdges37;
             this.AgeTb.DefaultText = "";
             this.AgeTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.AgeTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -592,7 +592,7 @@ namespace DairyFarm
             this.AgeTb.PasswordChar = '\0';
             this.AgeTb.PlaceholderText = "";
             this.AgeTb.SelectedText = "";
-            this.AgeTb.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.AgeTb.ShadowDecoration.CustomizableEdges = customizableEdges38;
             this.AgeTb.Size = new System.Drawing.Size(208, 37);
             this.AgeTb.TabIndex = 14;
             // 
@@ -610,7 +610,7 @@ namespace DairyFarm
             // PastureTb
             // 
             this.PastureTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PastureTb.CustomizableEdges = customizableEdges25;
+            this.PastureTb.CustomizableEdges = customizableEdges39;
             this.PastureTb.DefaultText = "";
             this.PastureTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PastureTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -625,7 +625,7 @@ namespace DairyFarm
             this.PastureTb.PasswordChar = '\0';
             this.PastureTb.PlaceholderText = "";
             this.PastureTb.SelectedText = "";
-            this.PastureTb.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            this.PastureTb.ShadowDecoration.CustomizableEdges = customizableEdges40;
             this.PastureTb.Size = new System.Drawing.Size(208, 37);
             this.PastureTb.TabIndex = 16;
             // 
@@ -643,7 +643,7 @@ namespace DairyFarm
             // WeightTb
             // 
             this.WeightTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.WeightTb.CustomizableEdges = customizableEdges27;
+            this.WeightTb.CustomizableEdges = customizableEdges41;
             this.WeightTb.DefaultText = "";
             this.WeightTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.WeightTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -658,7 +658,7 @@ namespace DairyFarm
             this.WeightTb.PasswordChar = '\0';
             this.WeightTb.PlaceholderText = "";
             this.WeightTb.SelectedText = "";
-            this.WeightTb.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            this.WeightTb.ShadowDecoration.CustomizableEdges = customizableEdges42;
             this.WeightTb.Size = new System.Drawing.Size(208, 37);
             this.WeightTb.TabIndex = 18;
             // 
@@ -700,6 +700,7 @@ namespace DairyFarm
             this.SaveBtn.TabIndex = 22;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // EditBtn
             // 
@@ -753,26 +754,26 @@ namespace DairyFarm
             // 
             // guna2DataGridView2
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView2.ColumnHeadersHeight = 4;
             this.guna2DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView2.Location = new System.Drawing.Point(371, 518);
             this.guna2DataGridView2.Name = "guna2DataGridView2";

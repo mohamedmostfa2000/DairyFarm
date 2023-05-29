@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace DairyFarm
 {
@@ -13,8 +11,10 @@ namespace DairyFarm
         public Cows()
         {
             InitializeComponent();
+            
         }
-
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+        
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -70,6 +70,31 @@ namespace DairyFarm
             DashBoard ob = new DashBoard();
             ob.Show();
             this.Hide();
+        }
+        int age = 0;
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (CowNameTb.Text == "" || EarTagTb.Text == "" || ColorTb.Text == "" || BreedTb.Text == "" || WeightTb.Text == "" || AgeTb.Text == "" || PastureTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into CowTbl values ('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreedTb.Text + "'," + age + "," + WeightTb.Text + ",'" + PastureTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Saved ");
+                    Con.Close();
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
