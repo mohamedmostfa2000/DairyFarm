@@ -261,9 +261,10 @@ namespace DairyFarm
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Teal;
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.pictureBox6);
+            this.panel7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel7.Location = new System.Drawing.Point(12, 394);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(294, 62);
@@ -273,7 +274,7 @@ namespace DairyFarm
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label19.Location = new System.Drawing.Point(133, 6);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(104, 41);
@@ -322,6 +323,7 @@ namespace DairyFarm
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.Teal;
             this.panel9.Controls.Add(this.label21);
             this.panel9.Controls.Add(this.pictureBox8);
             this.panel9.Location = new System.Drawing.Point(12, 558);
@@ -333,7 +335,7 @@ namespace DairyFarm
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(97, 6);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(165, 45);
