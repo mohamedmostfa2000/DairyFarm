@@ -86,7 +86,7 @@ namespace DairyFarm
                     string Query = "insert into CowTbl values ('" + CowNameTb.Text + "','" + EarTagTb.Text + "','" + ColorTb.Text + "','" + BreedTb.Text + "'," + age + "," + WeightTb.Text + ",'" + PastureTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cow Saved ");
+                    MessageBox.Show("Cow Saved Successfully");
                     Con.Close();
                     
                 }
@@ -101,6 +101,13 @@ namespace DairyFarm
         {
             age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
 
+        }
+
+        private void DOBDate_MouseLeave(object sender, EventArgs e)
+        {
+
+            AgeTb.Text = "" + age;
+            age = Convert.ToInt32((DateTime.Today.Date - DOBDate.Value.Date).Days) / 365;
         }
     }
 }
