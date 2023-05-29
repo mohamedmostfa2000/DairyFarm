@@ -109,6 +109,7 @@ namespace DairyFarm
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(12, 315);
@@ -376,6 +377,7 @@ namespace DairyFarm
             this.ClientSize = new System.Drawing.Size(1382, 923);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MilkProduction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MilkProduction";
