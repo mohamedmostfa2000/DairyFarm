@@ -65,6 +65,8 @@ namespace DairyFarm
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -468,12 +470,40 @@ namespace DairyFarm
             this.dateTimePicker3.Size = new System.Drawing.Size(208, 38);
             this.dateTimePicker3.TabIndex = 109;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(640, 277);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(258, 31);
+            this.label4.TabIndex = 112;
+            this.label4.Text = " Expected Date To Calve";
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker4.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dateTimePicker4.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CustomFormat = "dd-MM-yy";
+            this.dateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(640, 317);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(208, 38);
+            this.dateTimePicker4.TabIndex = 111;
+            // 
             // Breedings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dateTimePicker4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.label2);
@@ -554,5 +584,7 @@ namespace DairyFarm
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
     }
 }
