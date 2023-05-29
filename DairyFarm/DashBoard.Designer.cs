@@ -169,6 +169,7 @@ namespace DairyFarm
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Teal;
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(12, 724);
@@ -180,8 +181,8 @@ namespace DairyFarm
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(97, 14);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(97, 6);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 45);
             this.label5.TabIndex = 10;
@@ -261,7 +262,7 @@ namespace DairyFarm
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Teal;
+            this.panel7.BackColor = System.Drawing.Color.DimGray;
             this.panel7.Controls.Add(this.label19);
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Location = new System.Drawing.Point(12, 394);
@@ -273,7 +274,7 @@ namespace DairyFarm
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label19.Location = new System.Drawing.Point(133, 6);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(104, 41);
