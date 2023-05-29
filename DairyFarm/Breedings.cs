@@ -19,5 +19,10 @@ namespace DairyFarm
         {
 
         }
+
+        private void Breedings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

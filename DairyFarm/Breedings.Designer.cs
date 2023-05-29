@@ -67,6 +67,8 @@ namespace DairyFarm
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -397,7 +399,7 @@ namespace DairyFarm
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(382, 155);
+            this.label15.Location = new System.Drawing.Point(360, 155);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(116, 31);
             this.label15.TabIndex = 106;
@@ -413,7 +415,7 @@ namespace DairyFarm
             this.dateTimePicker1.CustomFormat = "dd-MM-yy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(382, 195);
+            this.dateTimePicker1.Location = new System.Drawing.Point(360, 195);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(208, 38);
             this.dateTimePicker1.TabIndex = 105;
@@ -423,7 +425,7 @@ namespace DairyFarm
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(640, 155);
+            this.label2.Location = new System.Drawing.Point(617, 155);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 31);
             this.label2.TabIndex = 108;
@@ -439,7 +441,7 @@ namespace DairyFarm
             this.dateTimePicker2.CustomFormat = "dd-MM-yy";
             this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(640, 195);
+            this.dateTimePicker2.Location = new System.Drawing.Point(617, 195);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(208, 38);
             this.dateTimePicker2.TabIndex = 107;
@@ -449,7 +451,7 @@ namespace DairyFarm
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(382, 264);
+            this.label3.Location = new System.Drawing.Point(360, 264);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(175, 31);
             this.label3.TabIndex = 110;
@@ -465,7 +467,7 @@ namespace DairyFarm
             this.dateTimePicker3.CustomFormat = "dd-MM-yy";
             this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(382, 304);
+            this.dateTimePicker3.Location = new System.Drawing.Point(360, 304);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(208, 38);
             this.dateTimePicker3.TabIndex = 109;
@@ -475,7 +477,7 @@ namespace DairyFarm
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(640, 277);
+            this.label4.Location = new System.Drawing.Point(617, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(258, 31);
             this.label4.TabIndex = 112;
@@ -491,10 +493,36 @@ namespace DairyFarm
             this.dateTimePicker4.CustomFormat = "dd-MM-yy";
             this.dateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(640, 317);
+            this.dateTimePicker4.Location = new System.Drawing.Point(617, 304);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(208, 38);
             this.dateTimePicker4.TabIndex = 111;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(900, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 31);
+            this.label7.TabIndex = 114;
+            this.label7.Text = "Date Calved";
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker5.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dateTimePicker5.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker5.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker5.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker5.CustomFormat = "dd-MM-yy";
+            this.dateTimePicker5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker5.Location = new System.Drawing.Point(900, 304);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(208, 38);
+            this.dateTimePicker5.TabIndex = 113;
             // 
             // Breedings
             // 
@@ -502,6 +530,8 @@ namespace DairyFarm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.dateTimePicker5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker4);
             this.Controls.Add(this.label3);
@@ -516,6 +546,7 @@ namespace DairyFarm
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Breedings";
             this.Text = "Breedings";
+            this.Load += new System.EventHandler(this.Breedings_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -586,5 +617,7 @@ namespace DairyFarm
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
     }
 }
