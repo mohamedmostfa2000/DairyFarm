@@ -322,6 +322,7 @@ namespace DairyFarm
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(12, 231);
@@ -333,7 +334,7 @@ namespace DairyFarm
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label9.Location = new System.Drawing.Point(133, 6);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 45);
