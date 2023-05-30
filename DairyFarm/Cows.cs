@@ -91,6 +91,7 @@ namespace DairyFarm
                     MessageBox.Show("Cow Saved Successfully");
                     Con.Close();
                     populate();
+                    Clear();
                 }
                 catch (Exception Ex)
                 {
@@ -124,6 +125,24 @@ namespace DairyFarm
             sda.Fill(ds);
             CowsDGV.DataSource = ds.Tables[0];
             Con.Close();
+        }
+
+        int key = 0;
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EarTagTb.Text = "";
+            ColorTb.Text = "";
+            BreedTb.Text = "";
+            WeightTb.Text = "";
+            AgeTb.Text = "";
+            PastureTb.Text = "";
+            key = 0;
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }

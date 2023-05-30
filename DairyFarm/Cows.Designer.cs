@@ -99,7 +99,7 @@ namespace DairyFarm
             this.SaveBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
-            this.UpdateBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.CowsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -734,18 +734,19 @@ namespace DairyFarm
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // UpdateBtn
+            // ClearBtn
             // 
-            this.UpdateBtn.BackColor = System.Drawing.Color.DimGray;
-            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UpdateBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.UpdateBtn.Location = new System.Drawing.Point(1157, 371);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(183, 49);
-            this.UpdateBtn.TabIndex = 25;
-            this.UpdateBtn.Text = "Clear";
-            this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.BackColor = System.Drawing.Color.DimGray;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearBtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ClearBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClearBtn.Location = new System.Drawing.Point(1157, 371);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(183, 49);
+            this.ClearBtn.TabIndex = 25;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // label16
             // 
@@ -854,7 +855,7 @@ namespace DairyFarm
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.CowsDGV);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
@@ -943,7 +944,7 @@ namespace DairyFarm
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label16;
         private Guna.UI2.WinForms.Guna2DataGridView CowsDGV;
         private System.Windows.Forms.Label label17;
