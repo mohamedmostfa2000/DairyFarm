@@ -191,5 +191,32 @@ namespace DairyFarm
                 }
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Cow To Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "delete from CowTbl where CowId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Deleted Successfully");
+                    Con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
