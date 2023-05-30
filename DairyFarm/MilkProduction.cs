@@ -150,7 +150,28 @@ namespace DairyFarm
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || AmMilkTb.Text == "" || PmMilkTb.Text == "" || NoonMilkTb.Text == "" || TotalMilkTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "update MilkTbl set CowName='" + CowNameTb.Text + "',AmMilk='" + AmMilkTb.Text + "',NoonMilk='" + NoonMilkTb.Text + "',PmMilk='" + PmMilkTb.Text + "',TotalMilk=" + TotalMilkTb.Text + ",DateProd='" + Date.Value.Date + "',Where MId='" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Updated Successfully");
+                    Con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
 
         private void Clear_Click(object sender, EventArgs e)
