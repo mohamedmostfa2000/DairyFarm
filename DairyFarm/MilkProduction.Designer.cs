@@ -30,18 +30,16 @@ namespace DairyFarm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MilkProduction));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -84,7 +82,6 @@ namespace DairyFarm
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CowIdTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.CowNameTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.AmMilkTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.NoonMilkTb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -94,6 +91,7 @@ namespace DairyFarm
             this.Delete = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.CowsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
@@ -464,7 +462,7 @@ namespace DairyFarm
             // TotalMilkTb
             // 
             this.TotalMilkTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TotalMilkTb.CustomizableEdges = customizableEdges13;
+            this.TotalMilkTb.CustomizableEdges = customizableEdges1;
             this.TotalMilkTb.DefaultText = "";
             this.TotalMilkTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TotalMilkTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -479,7 +477,7 @@ namespace DairyFarm
             this.TotalMilkTb.PasswordChar = '\0';
             this.TotalMilkTb.PlaceholderText = "";
             this.TotalMilkTb.SelectedText = "";
-            this.TotalMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.TotalMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.TotalMilkTb.Size = new System.Drawing.Size(208, 37);
             this.TotalMilkTb.TabIndex = 42;
             // 
@@ -550,32 +548,10 @@ namespace DairyFarm
             this.label1.Text = "Manage Milk Production ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // CowIdTb
-            // 
-            this.CowIdTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowIdTb.CustomizableEdges = customizableEdges15;
-            this.CowIdTb.DefaultText = "";
-            this.CowIdTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.CowIdTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.CowIdTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.CowIdTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.CowIdTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CowIdTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CowIdTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CowIdTb.Location = new System.Drawing.Point(379, 170);
-            this.CowIdTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CowIdTb.Name = "CowIdTb";
-            this.CowIdTb.PasswordChar = '\0';
-            this.CowIdTb.PlaceholderText = "";
-            this.CowIdTb.SelectedText = "";
-            this.CowIdTb.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            this.CowIdTb.Size = new System.Drawing.Size(208, 37);
-            this.CowIdTb.TabIndex = 52;
-            // 
             // CowNameTb
             // 
             this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.CustomizableEdges = customizableEdges17;
+            this.CowNameTb.CustomizableEdges = customizableEdges3;
             this.CowNameTb.DefaultText = "";
             this.CowNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.CowNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -590,14 +566,14 @@ namespace DairyFarm
             this.CowNameTb.PasswordChar = '\0';
             this.CowNameTb.PlaceholderText = "";
             this.CowNameTb.SelectedText = "";
-            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.CowNameTb.Size = new System.Drawing.Size(208, 37);
             this.CowNameTb.TabIndex = 53;
             // 
             // AmMilkTb
             // 
             this.AmMilkTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.AmMilkTb.CustomizableEdges = customizableEdges19;
+            this.AmMilkTb.CustomizableEdges = customizableEdges5;
             this.AmMilkTb.DefaultText = "";
             this.AmMilkTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.AmMilkTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -612,14 +588,14 @@ namespace DairyFarm
             this.AmMilkTb.PasswordChar = '\0';
             this.AmMilkTb.PlaceholderText = "";
             this.AmMilkTb.SelectedText = "";
-            this.AmMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.AmMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.AmMilkTb.Size = new System.Drawing.Size(208, 37);
             this.AmMilkTb.TabIndex = 54;
             // 
             // NoonMilkTb
             // 
             this.NoonMilkTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.NoonMilkTb.CustomizableEdges = customizableEdges21;
+            this.NoonMilkTb.CustomizableEdges = customizableEdges7;
             this.NoonMilkTb.DefaultText = "";
             this.NoonMilkTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.NoonMilkTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -634,14 +610,14 @@ namespace DairyFarm
             this.NoonMilkTb.PasswordChar = '\0';
             this.NoonMilkTb.PlaceholderText = "";
             this.NoonMilkTb.SelectedText = "";
-            this.NoonMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.NoonMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.NoonMilkTb.Size = new System.Drawing.Size(208, 37);
             this.NoonMilkTb.TabIndex = 55;
             // 
             // PmMilkTb
             // 
             this.PmMilkTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PmMilkTb.CustomizableEdges = customizableEdges23;
+            this.PmMilkTb.CustomizableEdges = customizableEdges9;
             this.PmMilkTb.DefaultText = "";
             this.PmMilkTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.PmMilkTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -656,7 +632,7 @@ namespace DairyFarm
             this.PmMilkTb.PasswordChar = '\0';
             this.PmMilkTb.PlaceholderText = "";
             this.PmMilkTb.SelectedText = "";
-            this.PmMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.PmMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.PmMilkTb.Size = new System.Drawing.Size(208, 37);
             this.PmMilkTb.TabIndex = 56;
             // 
@@ -766,12 +742,22 @@ namespace DairyFarm
             this.CowsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.CowsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // CowIdCb
+            // 
+            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Location = new System.Drawing.Point(379, 170);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(197, 39);
+            this.CowIdCb.TabIndex = 81;
+            // 
             // MilkProduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.CowsDGV);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Delete);
@@ -781,7 +767,6 @@ namespace DairyFarm
             this.Controls.Add(this.NoonMilkTb);
             this.Controls.Add(this.AmMilkTb);
             this.Controls.Add(this.CowNameTb);
-            this.Controls.Add(this.CowIdTb);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.Date);
@@ -872,7 +857,6 @@ namespace DairyFarm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox CowIdTb;
         private Guna.UI2.WinForms.Guna2TextBox CowNameTb;
         private Guna.UI2.WinForms.Guna2TextBox AmMilkTb;
         private Guna.UI2.WinForms.Guna2TextBox NoonMilkTb;
@@ -882,5 +866,6 @@ namespace DairyFarm
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Clear;
         private Guna.UI2.WinForms.Guna2DataGridView CowsDGV;
+        private System.Windows.Forms.ComboBox CowIdCb;
     }
 }
