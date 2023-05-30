@@ -14,6 +14,7 @@ namespace DairyFarm
         public MilkProduction()
         {
             InitializeComponent();
+            populate();
             FillCowId();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -81,9 +82,30 @@ namespace DairyFarm
             this.Hide();
         }
 
+
+        private void populate()
+        {
+            Con.Open();
+            string query = "select * from MilkTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            MilkDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         private void EditBtn_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }
