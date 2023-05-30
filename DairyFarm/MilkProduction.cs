@@ -182,5 +182,16 @@ namespace DairyFarm
                 key = Convert.ToInt32(MilkDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void PmMilkTb_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PmMilkTb_MouseLeave(object sender, EventArgs e)
+        {
+            int Total = Convert.ToInt32(AmMilkTb.Text) + Convert.ToInt32(NoonMilkTb.Text) + Convert.ToInt32(PmMilkTb.Text);
+            TotalMilkTb.Text = "" + Total;
+        }
     }
 }

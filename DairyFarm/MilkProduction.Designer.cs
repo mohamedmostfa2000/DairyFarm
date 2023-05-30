@@ -636,6 +636,8 @@ namespace DairyFarm
             this.PmMilkTb.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.PmMilkTb.Size = new System.Drawing.Size(208, 37);
             this.PmMilkTb.TabIndex = 56;
+            this.PmMilkTb.TextChanged += new System.EventHandler(this.PmMilkTb_TextChanged);
+            this.PmMilkTb.MouseLeave += new System.EventHandler(this.PmMilkTb_MouseLeave);
             // 
             // SaveBtn
             // 
