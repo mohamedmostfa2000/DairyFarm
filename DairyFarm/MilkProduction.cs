@@ -162,5 +162,25 @@ namespace DairyFarm
         {
             GetCowName();
         }
+
+        private void MilkDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            CowIdCb.SelectedValue = MilkDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = MilkDGV.SelectedRows[0].Cells[2].Value.ToString();
+            AmMilkTb.Text = MilkDGV.SelectedRows[0].Cells[3].Value.ToString();
+            NoonMilkTb.Text = MilkDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PmMilkTb.Text = MilkDGV.SelectedRows[0].Cells[5].Value.ToString();
+            TotalMilkTb.Text = MilkDGV.SelectedRows[0].Cells[6].Value.ToString();
+            Date.Text = MilkDGV.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(MilkDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
