@@ -94,6 +94,17 @@ namespace DairyFarm
             MilkDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+        int key = 0;
+
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            AmMilkTb.Text = "";
+            NoonMilkTb.Text = "";
+            PmMilkTb.Text = "";
+            TotalMilkTb.Text = "";
+            key = 0;
+        }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
