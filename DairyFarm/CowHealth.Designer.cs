@@ -30,21 +30,21 @@ namespace DairyFarm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CowHealth));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -220,7 +220,7 @@ namespace DairyFarm
             // CowNameTb
             // 
             this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.CustomizableEdges = customizableEdges13;
+            this.CowNameTb.CustomizableEdges = customizableEdges1;
             this.CowNameTb.DefaultText = "";
             this.CowNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.CowNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -228,7 +228,7 @@ namespace DairyFarm
             this.CowNameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.CowNameTb.Enabled = false;
             this.CowNameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CowNameTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CowNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CowNameTb.Location = new System.Drawing.Point(626, 194);
             this.CowNameTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -236,7 +236,7 @@ namespace DairyFarm
             this.CowNameTb.PasswordChar = '\0';
             this.CowNameTb.PlaceholderText = "";
             this.CowNameTb.SelectedText = "";
-            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            this.CowNameTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.CowNameTb.Size = new System.Drawing.Size(208, 37);
             this.CowNameTb.TabIndex = 76;
             // 
@@ -498,25 +498,25 @@ namespace DairyFarm
             // 
             // CowIdCb
             // 
-            this.CowIdCb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowIdCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CowIdCb.FormattingEnabled = true;
             this.CowIdCb.Location = new System.Drawing.Point(379, 194);
             this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(197, 39);
+            this.CowIdCb.Size = new System.Drawing.Size(197, 37);
             this.CowIdCb.TabIndex = 80;
             this.CowIdCb.SelectionChangeCommitted += new System.EventHandler(this.CowIdCb_SelectionChangeCommitted);
             // 
             // EventTb
             // 
             this.EventTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.EventTb.CustomizableEdges = customizableEdges15;
+            this.EventTb.CustomizableEdges = customizableEdges3;
             this.EventTb.DefaultText = "";
             this.EventTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.EventTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.EventTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.EventTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.EventTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EventTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EventTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EventTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EventTb.Location = new System.Drawing.Point(893, 194);
             this.EventTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -524,7 +524,7 @@ namespace DairyFarm
             this.EventTb.PasswordChar = '\0';
             this.EventTb.PlaceholderText = "";
             this.EventTb.SelectedText = "";
-            this.EventTb.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            this.EventTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.EventTb.Size = new System.Drawing.Size(208, 37);
             this.EventTb.TabIndex = 82;
             // 
@@ -542,14 +542,14 @@ namespace DairyFarm
             // DiagnosisTb
             // 
             this.DiagnosisTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.DiagnosisTb.CustomizableEdges = customizableEdges17;
+            this.DiagnosisTb.CustomizableEdges = customizableEdges5;
             this.DiagnosisTb.DefaultText = "";
             this.DiagnosisTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.DiagnosisTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.DiagnosisTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DiagnosisTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.DiagnosisTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DiagnosisTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DiagnosisTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DiagnosisTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.DiagnosisTb.Location = new System.Drawing.Point(1157, 194);
             this.DiagnosisTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -557,7 +557,7 @@ namespace DairyFarm
             this.DiagnosisTb.PasswordChar = '\0';
             this.DiagnosisTb.PlaceholderText = "";
             this.DiagnosisTb.SelectedText = "";
-            this.DiagnosisTb.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            this.DiagnosisTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.DiagnosisTb.Size = new System.Drawing.Size(208, 37);
             this.DiagnosisTb.TabIndex = 84;
             // 
@@ -575,14 +575,14 @@ namespace DairyFarm
             // TreatmentTb
             // 
             this.TreatmentTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TreatmentTb.CustomizableEdges = customizableEdges19;
+            this.TreatmentTb.CustomizableEdges = customizableEdges7;
             this.TreatmentTb.DefaultText = "";
             this.TreatmentTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TreatmentTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TreatmentTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TreatmentTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TreatmentTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TreatmentTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TreatmentTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TreatmentTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TreatmentTb.Location = new System.Drawing.Point(626, 302);
             this.TreatmentTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -590,7 +590,7 @@ namespace DairyFarm
             this.TreatmentTb.PasswordChar = '\0';
             this.TreatmentTb.PlaceholderText = "";
             this.TreatmentTb.SelectedText = "";
-            this.TreatmentTb.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.TreatmentTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.TreatmentTb.Size = new System.Drawing.Size(208, 37);
             this.TreatmentTb.TabIndex = 86;
             // 
@@ -608,14 +608,14 @@ namespace DairyFarm
             // CostTb
             // 
             this.CostTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CostTb.CustomizableEdges = customizableEdges21;
+            this.CostTb.CustomizableEdges = customizableEdges9;
             this.CostTb.DefaultText = "";
             this.CostTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.CostTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.CostTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.CostTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.CostTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CostTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CostTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CostTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CostTb.Location = new System.Drawing.Point(893, 302);
             this.CostTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -623,7 +623,7 @@ namespace DairyFarm
             this.CostTb.PasswordChar = '\0';
             this.CostTb.PlaceholderText = "";
             this.CostTb.SelectedText = "";
-            this.CostTb.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            this.CostTb.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.CostTb.Size = new System.Drawing.Size(208, 37);
             this.CostTb.TabIndex = 88;
             // 
@@ -641,14 +641,14 @@ namespace DairyFarm
             // VetNameTb
             // 
             this.VetNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.VetNameTb.CustomizableEdges = customizableEdges23;
+            this.VetNameTb.CustomizableEdges = customizableEdges11;
             this.VetNameTb.DefaultText = "";
             this.VetNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.VetNameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.VetNameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VetNameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.VetNameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.VetNameTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.VetNameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.VetNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.VetNameTb.Location = new System.Drawing.Point(1158, 302);
             this.VetNameTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -656,7 +656,7 @@ namespace DairyFarm
             this.VetNameTb.PasswordChar = '\0';
             this.VetNameTb.PlaceholderText = "";
             this.VetNameTb.SelectedText = "";
-            this.VetNameTb.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            this.VetNameTb.ShadowDecoration.CustomizableEdges = customizableEdges12;
             this.VetNameTb.Size = new System.Drawing.Size(208, 37);
             this.VetNameTb.TabIndex = 90;
             // 
@@ -697,6 +697,7 @@ namespace DairyFarm
             this.EditBtn.TabIndex = 92;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -752,26 +753,26 @@ namespace DairyFarm
             // 
             // HealthDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.HealthDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealthDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.HealthDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealthDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.HealthDGV.ColumnHeadersHeight = 24;
             this.HealthDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealthDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealthDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.HealthDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.HealthDGV.Location = new System.Drawing.Point(368, 512);
             this.HealthDGV.Name = "HealthDGV";
@@ -802,6 +803,7 @@ namespace DairyFarm
             this.HealthDGV.ThemeStyle.RowsStyle.Height = 29;
             this.HealthDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.HealthDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.HealthDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HealthDGV_CellContentClick);
             // 
             // CowHealth
             // 
