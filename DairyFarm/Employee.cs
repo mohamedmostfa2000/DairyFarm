@@ -84,5 +84,23 @@ namespace DairyFarm
                 }
             }
         }
+
+        int key = 0;
+        private void EmployeeDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            NameTb.Text = EmployeeDGV.SelectedRows[0].Cells[1].Value.ToString();
+            DOB.Text = EmployeeDGV.SelectedRows[0].Cells[2].Value.ToString();
+            GenCb.SelectedItem = EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString();
+            PhoneTb.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AddressTb.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (NameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(EmployeeDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
