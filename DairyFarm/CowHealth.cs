@@ -116,5 +116,31 @@ namespace DairyFarm
         {
             GetCowName();
         }
+
+        private void SaveBtn_Click_1(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into HealthTbl values ('" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + Date.Value.Date + "','" + EventTb.Text + "'," + DiagnosisTb.Text + "," + TreatmentTb.Text + ",'" + CostTb.Text + ",'" + VetNameTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Health issue Saved Successfully");
+                    Con.Close();
+                    populate();
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
