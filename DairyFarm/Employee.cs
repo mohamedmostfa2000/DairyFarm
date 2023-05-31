@@ -14,6 +14,8 @@ namespace DairyFarm
         public Employee()
         {
             InitializeComponent();
+            populate();
+            Clear();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -29,6 +31,16 @@ namespace DairyFarm
             sda.Fill(ds);
             EmployeeDGV.DataSource = ds.Tables[0];
             Con.Close();
+        }
+
+
+        private void Clear()
+        {
+            NameTb.Text = "";
+            PhoneTb.Text = ""; 
+            AddressTb.Text = "";
+            GenCb.SelectedIndex = -1;
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
