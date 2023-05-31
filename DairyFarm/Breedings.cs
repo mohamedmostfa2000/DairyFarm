@@ -131,15 +131,16 @@ namespace DairyFarm
                 try
                 {
                     Con.Open();
-                    string Query = "insert into BreedTbl values ('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "'," + PregDate.Value.Date + "," + ExpDate.Value.Date + ",'" + DateCalved.Value.Date + ",'" + CowAgeTb.Text + ",'" + RemarksTb.Text + "')";
+                    string Query = "insert into BreedTbl values ('" + HeatDate.Value.Date + "','" + BreedDate.Value.Date + "','" + CowIdCb.SelectedValue.ToString() + "','" + CowNameTb.Text + "','" + PregDate.Value.Date + "','" + ExpDate.Value.Date + "','" + DateCalved.Value.Date + "','" + CowAgeTb.Text + "','" + RemarksTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     populate();
                     Clear();
+
                     MessageBox.Show("Breeding Report Saved Successfully");
                     Con.Close();
-                   
-                  
+                    
+
                 }
                 catch (Exception Ex)
                 {
@@ -229,10 +230,11 @@ namespace DairyFarm
                     string Query = "delete from BreedTbl where BrId = " + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Breed Deleted Successfully");
-                    Con.Close();
                     populate();
                     Clear();
+                    MessageBox.Show("Breed Deleted Successfully");
+                    Con.Close();
+                   
                 }
                 catch (Exception Ex)
                 {
