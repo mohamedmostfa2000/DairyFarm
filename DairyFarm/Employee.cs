@@ -102,5 +102,32 @@ namespace DairyFarm
                 key = Convert.ToInt32(EmployeeDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!!!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    populate();
+                    Clear();
+                    MessageBox.Show("Employee Edited Successfully");
+                    Con.Close();
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
