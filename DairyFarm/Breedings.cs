@@ -17,7 +17,23 @@ namespace DairyFarm
             
         }
 
-       
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void FillCowId()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CowId from CowTbl", Con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CowId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "CowId";
+            CowIdCb.DataSource = dt;
+            Con.Close();
+        }
+
+
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -69,6 +85,11 @@ namespace DairyFarm
             DashBoard ob = new DashBoard();
             ob.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
