@@ -681,7 +681,6 @@ namespace DairyFarm
             this.SaveBtn.TabIndex = 91;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
-            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // EditBtn
             // 
@@ -719,7 +718,7 @@ namespace DairyFarm
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(183, 49);
             this.ClearBtn.TabIndex = 94;
-            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.Text = "Update";
             this.ClearBtn.UseVisualStyleBackColor = false;
             // 
             // label15
