@@ -215,9 +215,30 @@ namespace DairyFarm
             }
         }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
+        private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Breed Report Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "delete from BreedTbl where BrId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breed Deleted Successfully");
+                    Con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
     
