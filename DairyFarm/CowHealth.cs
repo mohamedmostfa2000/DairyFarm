@@ -145,7 +145,28 @@ namespace DairyFarm
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "update HealthTbl set cowId=" + CowIdCb.SelectedValue.ToString() + ",cowname='" + CowNameTb.Text + "',RepDate='" + Date.Value.Date + "',Event='" + EventTb.Text + "',Diagnosis='" + DiagnosisTb.Text + "',Treatment='" + TreatmentTb.Text + "',Cost=" + CostTb.Text + ",VetName='" + VetNameTb.Text + "' where RepId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Report Updated Successfully");
+                    Con.Close();
+                    populate();
+                   
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
 
         int key = 0;
