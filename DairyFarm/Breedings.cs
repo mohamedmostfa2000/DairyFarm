@@ -16,6 +16,7 @@ namespace DairyFarm
             InitializeComponent();
             FillCowId();
             populate();
+            Clear();
 
 
         }
@@ -134,6 +135,7 @@ namespace DairyFarm
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     populate();
+                    Clear();
                     MessageBox.Show("Breeding Report Saved Successfully");
                     Con.Close();
                    
@@ -146,9 +148,23 @@ namespace DairyFarm
             }
         }
 
+        int key = 0;
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            RemarksTb.Text = "";
+            CowAgeTb.Text = "";
+            key = 0;
+        }
+
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
             GetCowName();
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }
