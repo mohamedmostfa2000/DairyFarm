@@ -16,6 +16,7 @@ namespace DairyFarm
             InitializeComponent();
             FillCowId();
             populate();
+            Clear();
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -117,6 +118,19 @@ namespace DairyFarm
             GetCowName();
         }
 
+
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EventTb.Text = "";
+            CostTb.Text = "";
+            DiagnosisTb.Text = "";
+            VetNameTb.Text = "";
+            TreatmentTb.Text = "";
+            key = 0;
+        }
+
+
         private void SaveBtn_Click_1(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || EventTb.Text == "" || CostTb.Text == "" || VetNameTb.Text == "" || DiagnosisTb.Text == "" || TreatmentTb.Text == "")
@@ -134,7 +148,9 @@ namespace DairyFarm
                     MessageBox.Show("Health issue Saved Successfully");
                     Con.Close();
                     populate();
-                    
+                    Clear();
+
+
                 }
                 catch (Exception Ex)
                 {
@@ -160,7 +176,9 @@ namespace DairyFarm
                     MessageBox.Show("Report Updated Successfully");
                     Con.Close();
                     populate();
-                   
+                    Clear();
+
+
                 }
                 catch (Exception Ex)
                 {
@@ -207,7 +225,9 @@ namespace DairyFarm
                     MessageBox.Show("Report Deleted Successfully");
                     Con.Close();
                     populate();
-                   
+                    Clear();
+
+
                 }
                 catch (Exception Ex)
                 {
