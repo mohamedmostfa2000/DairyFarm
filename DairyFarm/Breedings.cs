@@ -50,6 +50,21 @@ namespace DairyFarm
             Con.Close();
         }
 
+        private void GetCowName()
+        {
+            Con.Open();
+            string query = "select * from CowTbl where CowId =" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+                CowAgeTb.Text = dr["Age"].ToString();
+            }
+            Con.Close();
+        }
 
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -107,6 +122,11 @@ namespace DairyFarm
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
