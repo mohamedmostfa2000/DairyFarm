@@ -129,5 +129,37 @@ namespace DairyFarm
                 }
             }
         }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select an Employee to Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "delete from EmployeeTbl where EmpId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    populate();
+                    Clear();
+                    MessageBox.Show("Employee Deleted Successfully");
+                    Con.Close();
+                   
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
