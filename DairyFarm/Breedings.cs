@@ -187,5 +187,38 @@ namespace DairyFarm
                 key = Convert.ToInt32(BreedDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "update BreedTbl set HeatDate=" + HeatDate.Value.Date + "',BreedDate='" + BreedDate.Value.Date + "',CowId='" + CowIdCb.SelectedValue.ToString() + ",CowName='" + CowNameTb.Text + "',PregDate='" + PregDate.Value.Date + "',ExpDateCalve='" + ExpDate.Value.Date + "',DateCalved='" + DateCalved.Value.Date + ",CowAge='" + CowAgeTb.Text + ",Remarks='" + RemarksTb.Text + "' where BrId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    populate();
+                    Clear();
+                    MessageBox.Show("Breeding Updated Successfully");
+                    Con.Close();
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
+    
 }
