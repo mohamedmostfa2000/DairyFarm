@@ -189,5 +189,31 @@ namespace DairyFarm
                 key = Convert.ToInt32(HealthDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select The Report to Be Deleted!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "delete from HealthTbl where RepId = " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Report Deleted Successfully");
+                    Con.Close();
+                    populate();
+                   
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
