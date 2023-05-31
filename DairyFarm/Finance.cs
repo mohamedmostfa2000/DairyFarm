@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -13,22 +14,13 @@ namespace DairyFarm
         public Finance()
         {
             InitializeComponent();
+           
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+       
 
-        }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -77,5 +69,7 @@ namespace DairyFarm
             ob.Show();
             this.Hide();
         }
+
+       
     }
 }

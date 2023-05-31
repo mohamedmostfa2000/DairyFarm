@@ -16,6 +16,16 @@ namespace DairyFarm
             InitializeComponent();
             populate();
             FillCowId();
+            
+        }
+        private void Clear2()
+        {
+            CowNameTb.Text = "";
+            AmMilkTb.Text = "";
+            NoonMilkTb.Text = "";
+            PmMilkTb.Text = "";
+            TotalMilkTb.Text = "";
+            key = 0;
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -35,10 +45,6 @@ namespace DairyFarm
 
 
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -96,15 +102,7 @@ namespace DairyFarm
         }
         int key = 0;
 
-        private void Clear()
-        {
-            CowNameTb.Text = "";
-            AmMilkTb.Text = "";
-            NoonMilkTb.Text = "";
-            PmMilkTb.Text = "";
-            TotalMilkTb.Text = "";
-            key = 0;
-        }
+        
 
 
         private void GetCowName()
@@ -138,7 +136,7 @@ namespace DairyFarm
                     MessageBox.Show("Milk Saved Successfully");
                     Con.Close();
                     populate();
-                    Clear();
+                    Clear2();
                 }
                 catch (Exception Ex)
                 {
@@ -165,7 +163,7 @@ namespace DairyFarm
                     MessageBox.Show("Product Updated Successfully");
                     Con.Close();
                     populate();
-                    Clear();
+                    Clear2();
                 }
                 catch (Exception Ex)
                 {
@@ -176,7 +174,7 @@ namespace DairyFarm
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            Clear();
+           Clear2();
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
@@ -204,15 +202,11 @@ namespace DairyFarm
             }
         }
 
-        private void PmMilkTb_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void PmMilkTb_MouseLeave(object sender, EventArgs e)
         {
-            int Total = Convert.ToInt32(AmMilkTb.Text) + Convert.ToInt32(NoonMilkTb.Text) + Convert.ToInt32(PmMilkTb.Text);
-            TotalMilkTb.Text = "" + Total;
+            
         }
 
         private void Delete_Click(object sender, EventArgs e)
@@ -232,13 +226,24 @@ namespace DairyFarm
                     MessageBox.Show("Product Deleted Successfully");
                     Con.Close();
                     populate();
-                    Clear();
+                    Clear2();
                 }
                 catch (Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void PmMilkTb_Leave(object sender, EventArgs e)
+        {
+            int Total = Convert.ToInt32(AmMilkTb.Text) + Convert.ToInt32(NoonMilkTb.Text) + Convert.ToInt32(PmMilkTb.Text);
+            TotalMilkTb.Text = "" + Total;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

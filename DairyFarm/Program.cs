@@ -17,7 +17,7 @@ namespace DairyFarm
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cows());
+            Application.Run(new Login());
         }
     }
 }

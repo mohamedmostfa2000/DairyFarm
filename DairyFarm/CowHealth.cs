@@ -56,5 +56,10 @@ namespace DairyFarm
             ob.Show();
             this.Hide();
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
