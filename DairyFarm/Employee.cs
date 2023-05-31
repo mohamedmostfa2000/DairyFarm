@@ -57,5 +57,32 @@ namespace DairyFarm
         {
 
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "" )
+            {
+                MessageBox.Show("Missing Data!!! ");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into EmployeeTbl values ('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    populate();
+                    Clear();
+                    MessageBox.Show("Employee Saved Successfully");
+                    Con.Close();
+                   
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
