@@ -14,7 +14,10 @@ namespace DairyFarm
         public Breedings()
         {
             InitializeComponent();
-            
+            FillCowId();
+            populate();
+
+
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -30,6 +33,20 @@ namespace DairyFarm
             dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
             CowIdCb.DataSource = dt;
+            Con.Close();
+        }
+
+
+        private void populate()
+        {
+            
+            Con.Open();
+            string query = "select * from BreedTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            BreedDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
 
