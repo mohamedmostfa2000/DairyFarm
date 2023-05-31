@@ -14,6 +14,8 @@ namespace DairyFarm
         public CowHealth()
         {
             InitializeComponent();
+            FillCowId();
+            populate();
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -34,6 +36,18 @@ namespace DairyFarm
         }
 
 
+        private void populate()
+        {
+            
+            Con.Open();
+            string query = "select * from HealthTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealthDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
 
         private void GetCowName()
         {
@@ -96,6 +110,11 @@ namespace DairyFarm
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
