@@ -14,5 +14,20 @@ namespace DairyFarm
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Employee_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Employee_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
