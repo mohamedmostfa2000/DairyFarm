@@ -14,13 +14,14 @@ namespace DairyFarm
         public Finance()
         {
             InitializeComponent();
-           
+            populateExp();
+
         }
 
-       
 
 
-     
+
+
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -90,16 +91,32 @@ namespace DairyFarm
                     string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + ExpPurpCb.SelectedItem.ToString() + "','" + ExpAmountTb.Text + "'," + EmpIdLbl.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Expenditure Saved Successfully");
                     Con.Close();
-                   
-                    
+                    populateExp();
+                    MessageBox.Show("Expenditure Saved Successfully");
+
+
+
                 }
                 catch (Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+
+        private void populateExp()
+        {
+            
+            Con.Open();
+            string query = "select * from ExpenditureTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpDGV.DataSource = ds.Tables[0];
+            Con.Close();
         }
     }
 }
