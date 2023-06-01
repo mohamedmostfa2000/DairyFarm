@@ -593,6 +593,7 @@ namespace DairyFarm
             this.QuantityTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.QuantityTb.Size = new System.Drawing.Size(208, 37);
             this.QuantityTb.TabIndex = 112;
+            this.QuantityTb.Leave += new System.EventHandler(this.QuantityTb_Leave);
             // 
             // label7
             // 
@@ -614,6 +615,7 @@ namespace DairyFarm
             this.TotalTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TotalTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TotalTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TotalTb.Enabled = false;
             this.TotalTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TotalTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TotalTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));

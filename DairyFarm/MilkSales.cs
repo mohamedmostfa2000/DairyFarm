@@ -94,5 +94,11 @@ namespace DairyFarm
             SalesDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
+
+        private void QuantityTb_Leave(object sender, EventArgs e)
+        {
+            int Total = Convert.ToInt32(PriceTb.Text) + Convert.ToInt32(QuantityTb.Text);
+            TotalTb.Text = "" + Total;
+        }
     }
 }
