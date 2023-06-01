@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace DairyFarm
         public DashBoard()
         {
             InitializeComponent();
+            Finance();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -60,6 +62,19 @@ namespace DairyFarm
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void Finance()
+        {
+            
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            IncLbl.Text =  dt.Rows[0][0].ToString();
+            Con.Close();
         }
     }
 }

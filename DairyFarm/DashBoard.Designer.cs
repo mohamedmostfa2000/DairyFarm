@@ -77,10 +77,11 @@ namespace DairyFarm
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.IncLbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -89,7 +90,6 @@ namespace DairyFarm
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -105,15 +105,15 @@ namespace DairyFarm
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label40 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label39 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -471,7 +471,7 @@ namespace DairyFarm
             // 
             this.guna2GradientPanel1.BorderRadius = 20;
             this.guna2GradientPanel1.BorderThickness = 1;
-            this.guna2GradientPanel1.Controls.Add(this.label4);
+            this.guna2GradientPanel1.Controls.Add(this.IncLbl);
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.CustomizableEdges = customizableEdges1;
@@ -484,15 +484,17 @@ namespace DairyFarm
             this.guna2GradientPanel1.TabIndex = 99;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
-            // label2
+            // IncLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(79, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 50);
-            this.label2.TabIndex = 100;
+            this.IncLbl.AutoSize = true;
+            this.IncLbl.BackColor = System.Drawing.Color.Transparent;
+            this.IncLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.IncLbl.Location = new System.Drawing.Point(57, 71);
+            this.IncLbl.Name = "IncLbl";
+            this.IncLbl.Size = new System.Drawing.Size(49, 41);
+            this.IncLbl.TabIndex = 101;
+            this.IncLbl.Text = "Rs";
             // 
             // label3
             // 
@@ -506,6 +508,16 @@ namespace DairyFarm
             this.label3.TabIndex = 100;
             this.label3.Text = "Income";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(79, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 50);
+            this.label2.TabIndex = 100;
+            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label22);
@@ -517,17 +529,17 @@ namespace DairyFarm
             this.panel10.Size = new System.Drawing.Size(512, 474);
             this.panel10.TabIndex = 100;
             // 
-            // label4
+            // label22
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(88, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 41);
-            this.label4.TabIndex = 101;
-            this.label4.Text = "Rs";
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label22.Location = new System.Drawing.Point(217, 19);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(131, 45);
+            this.label22.TabIndex = 102;
+            this.label22.Text = "Finance";
             // 
             // guna2GradientPanel2
             // 
@@ -551,7 +563,7 @@ namespace DairyFarm
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(79, 76);
+            this.label7.Location = new System.Drawing.Point(52, 76);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 41);
             this.label7.TabIndex = 101;
@@ -601,7 +613,7 @@ namespace DairyFarm
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(79, 71);
+            this.label14.Location = new System.Drawing.Point(45, 70);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(49, 41);
             this.label14.TabIndex = 101;
@@ -629,18 +641,6 @@ namespace DairyFarm
             this.label16.Size = new System.Drawing.Size(0, 50);
             this.label16.TabIndex = 100;
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label22.Location = new System.Drawing.Point(217, 19);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(134, 46);
-            this.label22.TabIndex = 102;
-            this.label22.Text = "Finance";
-            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.label23);
@@ -660,7 +660,7 @@ namespace DairyFarm
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label23.Location = new System.Drawing.Point(189, 19);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(148, 46);
+            this.label23.Size = new System.Drawing.Size(144, 45);
             this.label23.TabIndex = 102;
             this.label23.Text = "Logistics";
             // 
@@ -831,6 +831,18 @@ namespace DairyFarm
             this.guna2GradientPanel8.Size = new System.Drawing.Size(399, 209);
             this.guna2GradientPanel8.TabIndex = 103;
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label40.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label40.Location = new System.Drawing.Point(127, 136);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(142, 41);
+            this.label40.TabIndex = 103;
+            this.label40.Text = "Sale Date";
+            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -882,6 +894,18 @@ namespace DairyFarm
             this.guna2GradientPanel7.Size = new System.Drawing.Size(399, 209);
             this.guna2GradientPanel7.TabIndex = 104;
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label39.Location = new System.Drawing.Point(131, 136);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(135, 41);
+            this.label39.TabIndex = 102;
+            this.label39.Text = "Exp Date";
+            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -915,30 +939,6 @@ namespace DairyFarm
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(0, 50);
             this.label35.TabIndex = 100;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label39.Location = new System.Drawing.Point(131, 136);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(135, 41);
-            this.label39.TabIndex = 102;
-            this.label39.Text = "Exp Date";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label40.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label40.Location = new System.Drawing.Point(127, 136);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(142, 41);
-            this.label40.TabIndex = 103;
-            this.label40.Text = "Sale Date";
             // 
             // DashBoard
             // 
@@ -1043,7 +1043,7 @@ namespace DairyFarm
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
