@@ -41,8 +41,9 @@ namespace DairyFarm
                     AddressTb.Text = "";
                     GenCb.SelectedIndex = -1;
                     key = 0;
+                    PasswordTb.Text = "";
 
-                }
+        }
         
 
 
@@ -56,7 +57,7 @@ namespace DairyFarm
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "")
+            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Data!!! ");
             }
@@ -65,7 +66,7 @@ namespace DairyFarm
                 try
                 {
                     Con.Open();
-                    string Query = "insert into EmployeeTbl values ('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    string Query = "insert into EmployeeTbl values ('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "','" + PasswordTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();    
                     
@@ -93,7 +94,7 @@ namespace DairyFarm
                 try
                 {
                     Con.Open();
-                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "' where EmpId=" + key + ";";
+                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "' ,EmpDOB='" + DOB.Value.Date + "',Gender='" + GenCb.SelectedItem.ToString() + "',Phone='" + PhoneTb.Text + "',Address='" + AddressTb.Text + "',Password='" + PasswordTb.Text + "' where EmpId=" + key + ";";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     
@@ -145,6 +146,8 @@ namespace DairyFarm
             GenCb.SelectedItem = EmployeeDGV.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTb.Text = EmployeeDGV.SelectedRows[0].Cells[4].Value.ToString();
             AddressTb.Text = EmployeeDGV.SelectedRows[0].Cells[5].Value.ToString();
+            PasswordTb.Text = EmployeeDGV.SelectedRows[0].Cells[6].Value.ToString();
+
             if (NameTb.Text == "")
             {
                 key = 0;
@@ -153,6 +156,11 @@ namespace DairyFarm
             {
                 key = Convert.ToInt32(EmployeeDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

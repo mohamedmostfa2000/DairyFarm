@@ -17,7 +17,7 @@ namespace DairyFarm
         int startpoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            startpoint += 1;
+            startpoint += 2;
             progressBar1.Value = startpoint;
             if (progressBar1.Value == 100)
             {
