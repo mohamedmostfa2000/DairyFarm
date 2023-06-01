@@ -52,11 +52,11 @@ namespace DairyFarm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(356, 102);
+            this.label1.Location = new System.Drawing.Point(340, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 50);
+            this.label1.Size = new System.Drawing.Size(289, 50);
             this.label1.TabIndex = 99;
             this.label1.Text = "Dairy Farm M.S";
             // 
@@ -70,6 +70,7 @@ namespace DairyFarm
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.progressBar1.Location = new System.Drawing.Point(0, 737);
             this.progressBar1.Name = "progressBar1";
+            this.progressBar1.ProgressColor = System.Drawing.Color.Navy;
             this.progressBar1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.progressBar1.Size = new System.Drawing.Size(1000, 13);
             this.progressBar1.TabIndex = 101;
@@ -80,7 +81,7 @@ namespace DairyFarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1000, 750);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
