@@ -16,6 +16,7 @@ namespace DairyFarm
             InitializeComponent();
             Finance();
             Logistics();
+            GetMax();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -101,11 +102,25 @@ namespace DairyFarm
             CowNumLbl.Text = dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
-            MilkLbl.Text = dt1.Rows[0][0].ToString() + "Liters";
+            MilkLbl.Text = dt1.Rows[0][0].ToString() + " Liters";
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
             EmpNumLbl.Text = dt2.Rows[0][0].ToString();
             Con.Close();
+        }
+
+        private void GetMax()
+        {
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl", Con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl", Con);
+            DataTable dt = new DataTable();
+            DataTable dt1 = new DataTable();
+            sda.Fill(dt);
+            sda1.Fill(dt1);
+            HighAmtLbl.Text = "Rs  " + dt.Rows[0][0].ToString();
+            HighExpLbl.Text = "Rs  " + dt1.Rows[0][0].ToString();
+
+
         }
     }
 }
