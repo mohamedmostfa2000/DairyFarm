@@ -87,5 +87,15 @@ namespace DairyFarm
             BalLbl.Text = "Rs  " + bal;
             Con.Close();
         }
+        private void Logistic()
+        {
+            
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            CowNumLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
     }
 }
