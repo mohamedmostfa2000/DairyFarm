@@ -414,7 +414,6 @@ namespace DairyFarm
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1400, 45);
             this.panel2.TabIndex = 96;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox9
             // 
@@ -436,7 +435,6 @@ namespace DairyFarm
             this.label16.Size = new System.Drawing.Size(199, 45);
             this.label16.TabIndex = 100;
             this.label16.Text = "Sales Report";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label1
             // 
@@ -448,7 +446,6 @@ namespace DairyFarm
             this.label1.Size = new System.Drawing.Size(149, 41);
             this.label1.TabIndex = 102;
             this.label1.Text = "Milk Sales";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label15
             // 
@@ -460,7 +457,6 @@ namespace DairyFarm
             this.label15.Size = new System.Drawing.Size(62, 31);
             this.label15.TabIndex = 104;
             this.label15.Text = "Date";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // Date
             // 
@@ -476,7 +472,6 @@ namespace DairyFarm
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(208, 38);
             this.Date.TabIndex = 103;
-            this.Date.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // PriceTb
             // 
@@ -499,7 +494,6 @@ namespace DairyFarm
             this.PriceTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
             this.PriceTb.Size = new System.Drawing.Size(208, 37);
             this.PriceTb.TabIndex = 106;
-            this.PriceTb.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // label2
             // 
@@ -511,7 +505,6 @@ namespace DairyFarm
             this.label2.Size = new System.Drawing.Size(64, 31);
             this.label2.TabIndex = 105;
             this.label2.Text = "Price";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // NameTb
             // 
@@ -534,7 +527,6 @@ namespace DairyFarm
             this.NameTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
             this.NameTb.Size = new System.Drawing.Size(208, 37);
             this.NameTb.TabIndex = 108;
-            this.NameTb.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // label3
             // 
@@ -546,7 +538,6 @@ namespace DairyFarm
             this.label3.Size = new System.Drawing.Size(140, 31);
             this.label3.TabIndex = 107;
             this.label3.Text = "Client Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // PhoneTb
             // 
@@ -569,7 +560,6 @@ namespace DairyFarm
             this.PhoneTb.ShadowDecoration.CustomizableEdges = customizableEdges6;
             this.PhoneTb.Size = new System.Drawing.Size(208, 37);
             this.PhoneTb.TabIndex = 110;
-            this.PhoneTb.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // label4
             // 
@@ -581,7 +571,6 @@ namespace DairyFarm
             this.label4.Size = new System.Drawing.Size(143, 31);
             this.label4.TabIndex = 109;
             this.label4.Text = "Client Phone";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // QuantityTb
             // 
@@ -604,7 +593,6 @@ namespace DairyFarm
             this.QuantityTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
             this.QuantityTb.Size = new System.Drawing.Size(208, 37);
             this.QuantityTb.TabIndex = 112;
-            this.QuantityTb.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
             // label7
             // 
@@ -616,7 +604,6 @@ namespace DairyFarm
             this.label7.Size = new System.Drawing.Size(102, 31);
             this.label7.TabIndex = 111;
             this.label7.Text = "Quantity";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // TotalTb
             // 
@@ -639,7 +626,6 @@ namespace DairyFarm
             this.TotalTb.ShadowDecoration.CustomizableEdges = customizableEdges10;
             this.TotalTb.Size = new System.Drawing.Size(208, 37);
             this.TotalTb.TabIndex = 114;
-            this.TotalTb.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
             // 
             // label12
             // 
@@ -651,7 +637,6 @@ namespace DairyFarm
             this.label12.Size = new System.Drawing.Size(63, 31);
             this.label12.TabIndex = 113;
             this.label12.Text = "Total";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // SaveBtn
             // 
@@ -665,7 +650,7 @@ namespace DairyFarm
             this.SaveBtn.TabIndex = 115;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
-            this.SaveBtn.Click += new System.EventHandler(this.button1_Click);
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // ClearBtn
             // 
@@ -679,7 +664,6 @@ namespace DairyFarm
             this.ClearBtn.TabIndex = 118;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
-            this.ClearBtn.Click += new System.EventHandler(this.button4_Click);
             // 
             // EmpIdCb
             // 
@@ -784,7 +768,6 @@ namespace DairyFarm
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MilkSales";
             this.Text = "MilkSales";
-            this.Load += new System.EventHandler(this.MilkSales_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
