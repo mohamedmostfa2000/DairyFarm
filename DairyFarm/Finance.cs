@@ -191,9 +191,21 @@ namespace DairyFarm
             IncPurpCb.SelectedIndex = -1;
         }
 
+        private void FilterInc()
+        {
+            Con.Open();
+            string query = "select * from IncomeTbl where IncDate = '" + IncFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
         private void IncFilter_ValueChanged(object sender, EventArgs e)
         {
-
+            FilterInc();
         }
 
         private void ExpFilter_ValueChanged(object sender, EventArgs e)
