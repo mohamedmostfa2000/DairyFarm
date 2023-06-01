@@ -71,9 +71,14 @@ namespace DairyFarm
             
             Con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl", Con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select sum(ExpAmount) from ExpenditureTbl", Con);
+
             DataTable dt = new DataTable();
             sda.Fill(dt);
             IncLbl.Text =  dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            ExpLbl.Text = dt1.Rows[0][0].ToString();
             Con.Close();
         }
     }
