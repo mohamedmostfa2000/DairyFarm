@@ -84,7 +84,7 @@ namespace DairyFarm
             this.label16 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.IncDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Inc2DGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.IncFilter = new System.Windows.Forms.DateTimePicker();
             this.SaveIncBtn = new System.Windows.Forms.Button();
             this.IncAmountTb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -118,7 +118,7 @@ namespace DairyFarm
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpDGV)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Inc2DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -501,6 +501,7 @@ namespace DairyFarm
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ExpDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            this.ExpDGV.Enabled = false;
             this.ExpDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpDGV.Location = new System.Drawing.Point(370, 94);
             this.ExpDGV.Name = "ExpDGV";
@@ -598,6 +599,7 @@ namespace DairyFarm
             "Salary",
             "Food",
             "Tax",
+            "Maintenance",
             "Other"});
             this.ExpPurpCb.Location = new System.Drawing.Point(20, 193);
             this.ExpPurpCb.Name = "ExpPurpCb";
@@ -666,7 +668,7 @@ namespace DairyFarm
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.LightGray;
-            this.panel11.Controls.Add(this.IncDGV);
+            this.panel11.Controls.Add(this.Inc2DGV);
             this.panel11.Controls.Add(this.IncFilter);
             this.panel11.Controls.Add(this.SaveIncBtn);
             this.panel11.Controls.Add(this.IncAmountTb);
@@ -684,10 +686,10 @@ namespace DairyFarm
             this.panel11.Size = new System.Drawing.Size(1037, 422);
             this.panel11.TabIndex = 100;
             // 
-            // IncDGV
+            // Inc2DGV
             // 
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.IncDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.Inc2DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -695,9 +697,9 @@ namespace DairyFarm
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.IncDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.IncDGV.ColumnHeadersHeight = 24;
-            this.IncDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Inc2DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.Inc2DGV.ColumnHeadersHeight = 24;
+            this.Inc2DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -705,37 +707,37 @@ namespace DairyFarm
             dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.IncDGV.DefaultCellStyle = dataGridViewCellStyle12;
-            this.IncDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.IncDGV.Location = new System.Drawing.Point(370, 94);
-            this.IncDGV.Name = "IncDGV";
-            this.IncDGV.ReadOnly = true;
-            this.IncDGV.RowHeadersVisible = false;
-            this.IncDGV.RowHeadersWidth = 51;
-            this.IncDGV.RowTemplate.Height = 29;
-            this.IncDGV.Size = new System.Drawing.Size(646, 323);
-            this.IncDGV.TabIndex = 123;
-            this.IncDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.IncDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.IncDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.IncDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.IncDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.IncDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.IncDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.IncDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.IncDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.IncDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IncDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.IncDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.IncDGV.ThemeStyle.HeaderStyle.Height = 24;
-            this.IncDGV.ThemeStyle.ReadOnly = true;
-            this.IncDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.IncDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.IncDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IncDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.IncDGV.ThemeStyle.RowsStyle.Height = 29;
-            this.IncDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.IncDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Inc2DGV.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Inc2DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Inc2DGV.Location = new System.Drawing.Point(370, 96);
+            this.Inc2DGV.Name = "Inc2DGV";
+            this.Inc2DGV.ReadOnly = true;
+            this.Inc2DGV.RowHeadersVisible = false;
+            this.Inc2DGV.RowHeadersWidth = 51;
+            this.Inc2DGV.RowTemplate.Height = 29;
+            this.Inc2DGV.Size = new System.Drawing.Size(646, 310);
+            this.Inc2DGV.TabIndex = 127;
+            this.Inc2DGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Inc2DGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Inc2DGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Inc2DGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Inc2DGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Inc2DGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Inc2DGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Inc2DGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Inc2DGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Inc2DGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Inc2DGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Inc2DGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Inc2DGV.ThemeStyle.HeaderStyle.Height = 24;
+            this.Inc2DGV.ThemeStyle.ReadOnly = true;
+            this.Inc2DGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Inc2DGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Inc2DGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Inc2DGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Inc2DGV.ThemeStyle.RowsStyle.Height = 29;
+            this.Inc2DGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Inc2DGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // IncFilter
             // 
@@ -943,7 +945,7 @@ namespace DairyFarm
             ((System.ComponentModel.ISupportInitialize)(this.ExpDGV)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Inc2DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1001,11 +1003,11 @@ namespace DairyFarm
         private System.Windows.Forms.Button SaveExpBtn;
         private System.Windows.Forms.Button SaveIncBtn;
         private Guna.UI2.WinForms.Guna2DataGridView ExpDGV;
-        private Guna.UI2.WinForms.Guna2DataGridView IncDGV;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.DateTimePicker ExpFilter;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.DateTimePicker IncFilter;
         private System.Windows.Forms.Label EmpIdLbl;
+        private Guna.UI2.WinForms.Guna2DataGridView Inc2DGV;
     }
 }

@@ -17,6 +17,8 @@ namespace DairyFarm
             populateExp();
             ClearExp();
             populateInc();
+            ClearInc();
+
 
 
         }
@@ -145,6 +147,7 @@ namespace DairyFarm
                     cmd.ExecuteNonQuery();
                     Con.Close();
                     populateInc();
+                    ClearInc();
                     MessageBox.Show("Income Saved Successfully");
 
 
@@ -166,8 +169,14 @@ namespace DairyFarm
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            IncDGV.DataSource = ds.Tables[0];
+            Inc2DGV.DataSource = ds.Tables[0];
             Con.Close();
+        }
+
+        private void ClearInc()
+        {
+            IncAmountTb.Text = "";
+            IncPurpCb.SelectedIndex = -1;
         }
     }
 }
