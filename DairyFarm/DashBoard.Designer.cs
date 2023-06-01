@@ -97,7 +97,7 @@ namespace DairyFarm
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.MilkLbl = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -718,7 +718,7 @@ namespace DairyFarm
             // 
             this.guna2GradientPanel5.BorderRadius = 20;
             this.guna2GradientPanel5.BorderThickness = 1;
-            this.guna2GradientPanel5.Controls.Add(this.label27);
+            this.guna2GradientPanel5.Controls.Add(this.MilkLbl);
             this.guna2GradientPanel5.Controls.Add(this.label28);
             this.guna2GradientPanel5.Controls.Add(this.label29);
             this.guna2GradientPanel5.CustomizableEdges = customizableEdges25;
@@ -730,17 +730,17 @@ namespace DairyFarm
             this.guna2GradientPanel5.Size = new System.Drawing.Size(214, 153);
             this.guna2GradientPanel5.TabIndex = 102;
             // 
-            // label27
+            // MilkLbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label27.Location = new System.Drawing.Point(57, 62);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(83, 41);
-            this.label27.TabIndex = 101;
-            this.label27.Text = "Num";
+            this.MilkLbl.AutoSize = true;
+            this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
+            this.MilkLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MilkLbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.MilkLbl.Location = new System.Drawing.Point(57, 62);
+            this.MilkLbl.Name = "MilkLbl";
+            this.MilkLbl.Size = new System.Drawing.Size(83, 41);
+            this.MilkLbl.TabIndex = 101;
+            this.MilkLbl.Text = "Num";
             // 
             // label28
             // 
@@ -1062,7 +1062,7 @@ namespace DairyFarm
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label MilkLbl;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel6;
