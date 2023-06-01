@@ -30,16 +30,16 @@ namespace DairyFarm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Finance));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -72,30 +72,31 @@ namespace DairyFarm
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.ExpDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SaveExpBtn = new System.Windows.Forms.Button();
+            this.ExpAmountTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ExpPurpCb = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ExpDate = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.IncDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SaveIncBtn = new System.Windows.Forms.Button();
+            this.IncAmountTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.IncPurpCb = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.IncDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.IncFilter = new System.Windows.Forms.DateTimePicker();
+            this.ExpFilter = new System.Windows.Forms.DateTimePicker();
+            this.EmpIdLbl = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -446,45 +447,45 @@ namespace DairyFarm
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightGray;
-            this.panel10.Controls.Add(this.dateTimePicker4);
+            this.panel10.Controls.Add(this.ExpFilter);
             this.panel10.Controls.Add(this.ExpDGV);
             this.panel10.Controls.Add(this.label24);
-            this.panel10.Controls.Add(this.button1);
-            this.panel10.Controls.Add(this.guna2TextBox1);
+            this.panel10.Controls.Add(this.SaveExpBtn);
+            this.panel10.Controls.Add(this.ExpAmountTb);
             this.panel10.Controls.Add(this.label13);
-            this.panel10.Controls.Add(this.comboBox1);
+            this.panel10.Controls.Add(this.ExpPurpCb);
             this.panel10.Controls.Add(this.label15);
             this.panel10.Controls.Add(this.label12);
-            this.panel10.Controls.Add(this.dateTimePicker1);
+            this.panel10.Controls.Add(this.ExpDate);
             this.panel10.Controls.Add(this.label16);
             this.panel10.Controls.Add(this.label3);
-            this.panel10.Location = new System.Drawing.Point(340, 92);
+            this.panel10.Location = new System.Drawing.Point(340, 106);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1037, 424);
             this.panel10.TabIndex = 99;
             // 
             // ExpDGV
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.ExpDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ExpDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ExpDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExpDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ExpDGV.ColumnHeadersHeight = 24;
             this.ExpDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ExpDGV.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ExpDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ExpDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpDGV.Location = new System.Drawing.Point(370, 94);
             this.ExpDGV.Name = "ExpDGV";
@@ -492,7 +493,7 @@ namespace DairyFarm
             this.ExpDGV.RowHeadersVisible = false;
             this.ExpDGV.RowHeadersWidth = 51;
             this.ExpDGV.RowTemplate.Height = 29;
-            this.ExpDGV.Size = new System.Drawing.Size(646, 323);
+            this.ExpDGV.Size = new System.Drawing.Size(646, 318);
             this.ExpDGV.TabIndex = 122;
             this.ExpDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ExpDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -516,72 +517,72 @@ namespace DairyFarm
             this.ExpDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ExpDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // button1
+            // SaveExpBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(56, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 49);
-            this.button1.TabIndex = 121;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveExpBtn.BackColor = System.Drawing.Color.DimGray;
+            this.SaveExpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveExpBtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SaveExpBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.SaveExpBtn.Location = new System.Drawing.Point(50, 342);
+            this.SaveExpBtn.Name = "SaveExpBtn";
+            this.SaveExpBtn.Size = new System.Drawing.Size(183, 49);
+            this.SaveExpBtn.TabIndex = 121;
+            this.SaveExpBtn.Text = "Save";
+            this.SaveExpBtn.UseVisualStyleBackColor = false;
             // 
-            // guna2TextBox1
+            // ExpAmountTb
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.CustomizableEdges = customizableEdges9;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(26, 265);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            this.guna2TextBox1.Size = new System.Drawing.Size(248, 37);
-            this.guna2TextBox1.TabIndex = 120;
+            this.ExpAmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ExpAmountTb.CustomizableEdges = customizableEdges1;
+            this.ExpAmountTb.DefaultText = "";
+            this.ExpAmountTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ExpAmountTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ExpAmountTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ExpAmountTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ExpAmountTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ExpAmountTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpAmountTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ExpAmountTb.Location = new System.Drawing.Point(20, 278);
+            this.ExpAmountTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ExpAmountTb.Name = "ExpAmountTb";
+            this.ExpAmountTb.PasswordChar = '\0';
+            this.ExpAmountTb.PlaceholderText = "";
+            this.ExpAmountTb.SelectedText = "";
+            this.ExpAmountTb.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            this.ExpAmountTb.Size = new System.Drawing.Size(248, 37);
+            this.ExpAmountTb.TabIndex = 120;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(26, 222);
+            this.label13.Location = new System.Drawing.Point(20, 235);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(96, 31);
             this.label13.TabIndex = 119;
             this.label13.Text = "Amount";
             // 
-            // comboBox1
+            // ExpPurpCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ExpPurpCb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpPurpCb.FormattingEnabled = true;
+            this.ExpPurpCb.Items.AddRange(new object[] {
             "Salary",
             "Food",
             "Tax",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(26, 180);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(248, 39);
-            this.comboBox1.TabIndex = 118;
+            this.ExpPurpCb.Location = new System.Drawing.Point(20, 193);
+            this.ExpPurpCb.Name = "ExpPurpCb";
+            this.ExpPurpCb.Size = new System.Drawing.Size(248, 39);
+            this.ExpPurpCb.TabIndex = 118;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(26, 59);
+            this.label15.Location = new System.Drawing.Point(20, 72);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(62, 31);
             this.label15.TabIndex = 106;
@@ -592,33 +593,33 @@ namespace DairyFarm
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(26, 143);
+            this.label12.Location = new System.Drawing.Point(20, 156);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 31);
             this.label12.TabIndex = 117;
             this.label12.Text = "Purpose";
             // 
-            // dateTimePicker1
+            // ExpDate
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker1.CustomFormat = "dd-MM-yy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(26, 99);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(248, 38);
-            this.dateTimePicker1.TabIndex = 105;
+            this.ExpDate.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpDate.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.ExpDate.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.ExpDate.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.ExpDate.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.ExpDate.CustomFormat = "dd-MM-yy";
+            this.ExpDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ExpDate.Location = new System.Drawing.Point(20, 112);
+            this.ExpDate.Name = "ExpDate";
+            this.ExpDate.Size = new System.Drawing.Size(248, 38);
+            this.ExpDate.TabIndex = 105;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.Teal;
-            this.label16.Location = new System.Drawing.Point(579, 0);
+            this.label16.Location = new System.Drawing.Point(578, 4);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(250, 45);
             this.label16.TabIndex = 101;
@@ -629,7 +630,7 @@ namespace DairyFarm
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(17, 9);
+            this.label3.Location = new System.Drawing.Point(18, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(203, 41);
             this.label3.TabIndex = 100;
@@ -639,46 +640,46 @@ namespace DairyFarm
             // 
             this.panel11.BackColor = System.Drawing.Color.LightGray;
             this.panel11.Controls.Add(this.IncDGV);
-            this.panel11.Controls.Add(this.dateTimePicker3);
-            this.panel11.Controls.Add(this.button2);
-            this.panel11.Controls.Add(this.guna2TextBox2);
+            this.panel11.Controls.Add(this.IncFilter);
+            this.panel11.Controls.Add(this.SaveIncBtn);
+            this.panel11.Controls.Add(this.IncAmountTb);
             this.panel11.Controls.Add(this.label23);
             this.panel11.Controls.Add(this.label22);
-            this.panel11.Controls.Add(this.comboBox2);
+            this.panel11.Controls.Add(this.IncPurpCb);
             this.panel11.Controls.Add(this.label14);
             this.panel11.Controls.Add(this.label7);
-            this.panel11.Controls.Add(this.dateTimePicker2);
+            this.panel11.Controls.Add(this.IncDate);
             this.panel11.Controls.Add(this.label4);
             this.panel11.Controls.Add(this.label2);
-            this.panel11.Location = new System.Drawing.Point(340, 522);
+            this.panel11.Location = new System.Drawing.Point(340, 536);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1037, 436);
+            this.panel11.Size = new System.Drawing.Size(1037, 422);
             this.panel11.TabIndex = 100;
             // 
             // IncDGV
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.IncDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.IncDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.IncDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.IncDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.IncDGV.ColumnHeadersHeight = 24;
             this.IncDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.IncDGV.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.IncDGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.IncDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.IncDGV.Location = new System.Drawing.Point(370, 108);
+            this.IncDGV.Location = new System.Drawing.Point(370, 94);
             this.IncDGV.Name = "IncDGV";
             this.IncDGV.ReadOnly = true;
             this.IncDGV.RowHeadersVisible = false;
@@ -708,47 +709,47 @@ namespace DairyFarm
             this.IncDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.IncDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // button2
+            // SaveIncBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(56, 365);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 49);
-            this.button2.TabIndex = 122;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.SaveIncBtn.BackColor = System.Drawing.Color.DimGray;
+            this.SaveIncBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveIncBtn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SaveIncBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.SaveIncBtn.Location = new System.Drawing.Point(47, 357);
+            this.SaveIncBtn.Name = "SaveIncBtn";
+            this.SaveIncBtn.Size = new System.Drawing.Size(183, 49);
+            this.SaveIncBtn.TabIndex = 122;
+            this.SaveIncBtn.Text = "Save";
+            this.SaveIncBtn.UseVisualStyleBackColor = false;
             // 
-            // guna2TextBox2
+            // IncAmountTb
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.CustomizableEdges = customizableEdges11;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(27, 304);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            this.guna2TextBox2.Size = new System.Drawing.Size(248, 37);
-            this.guna2TextBox2.TabIndex = 124;
+            this.IncAmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IncAmountTb.CustomizableEdges = customizableEdges3;
+            this.IncAmountTb.DefaultText = "";
+            this.IncAmountTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.IncAmountTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.IncAmountTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IncAmountTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.IncAmountTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IncAmountTb.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncAmountTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.IncAmountTb.Location = new System.Drawing.Point(20, 295);
+            this.IncAmountTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.IncAmountTb.Name = "IncAmountTb";
+            this.IncAmountTb.PasswordChar = '\0';
+            this.IncAmountTb.PlaceholderText = "";
+            this.IncAmountTb.SelectedText = "";
+            this.IncAmountTb.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            this.IncAmountTb.Size = new System.Drawing.Size(248, 37);
+            this.IncAmountTb.TabIndex = 124;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label23.Location = new System.Drawing.Point(27, 261);
+            this.label23.Location = new System.Drawing.Point(18, 260);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(96, 31);
             this.label23.TabIndex = 123;
@@ -759,32 +760,32 @@ namespace DairyFarm
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(530, 70);
+            this.label22.Location = new System.Drawing.Point(519, 58);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 31);
             this.label22.TabIndex = 121;
             this.label22.Text = "Filter";
             // 
-            // comboBox2
+            // IncPurpCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.IncPurpCb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncPurpCb.FormattingEnabled = true;
+            this.IncPurpCb.Items.AddRange(new object[] {
             "Sales",
             "Training",
             "Services",
             "Other"});
-            this.comboBox2.Location = new System.Drawing.Point(26, 202);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(248, 39);
-            this.comboBox2.TabIndex = 120;
+            this.IncPurpCb.Location = new System.Drawing.Point(19, 205);
+            this.IncPurpCb.Name = "IncPurpCb";
+            this.IncPurpCb.Size = new System.Drawing.Size(248, 39);
+            this.IncPurpCb.TabIndex = 120;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(26, 165);
+            this.label14.Location = new System.Drawing.Point(20, 165);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(62, 31);
             this.label14.TabIndex = 119;
@@ -795,33 +796,33 @@ namespace DairyFarm
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(26, 70);
+            this.label7.Location = new System.Drawing.Point(18, 82);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 31);
             this.label7.TabIndex = 108;
             this.label7.Text = "Income Date";
             // 
-            // dateTimePicker2
+            // IncDate
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker2.CustomFormat = "dd-MM-yy";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(26, 113);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(248, 38);
-            this.dateTimePicker2.TabIndex = 107;
+            this.IncDate.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncDate.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.IncDate.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.IncDate.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.IncDate.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.IncDate.CustomFormat = "dd-MM-yy";
+            this.IncDate.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.IncDate.Location = new System.Drawing.Point(19, 116);
+            this.IncDate.Name = "IncDate";
+            this.IncDate.Size = new System.Drawing.Size(248, 38);
+            this.IncDate.TabIndex = 107;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(635, 12);
+            this.label4.Location = new System.Drawing.Point(624, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(185, 45);
             this.label4.TabIndex = 103;
@@ -832,52 +833,64 @@ namespace DairyFarm
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(17, 16);
+            this.label2.Location = new System.Drawing.Point(18, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 41);
             this.label2.TabIndex = 99;
             this.label2.Text = "Incomes";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label24.Location = new System.Drawing.Point(530, 54);
+            this.label24.Location = new System.Drawing.Point(531, 60);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(65, 31);
             this.label24.TabIndex = 125;
             this.label24.Text = "Filter";
             // 
-            // dateTimePicker3
+            // IncFilter
             // 
-            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker3.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker3.CustomFormat = "dd-MM-yy";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(601, 64);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(248, 38);
-            this.dateTimePicker3.TabIndex = 126;
+            this.IncFilter.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncFilter.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.IncFilter.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.IncFilter.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.IncFilter.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.IncFilter.CustomFormat = "dd-MM-yy";
+            this.IncFilter.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IncFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.IncFilter.Location = new System.Drawing.Point(590, 52);
+            this.IncFilter.Name = "IncFilter";
+            this.IncFilter.Size = new System.Drawing.Size(248, 38);
+            this.IncFilter.TabIndex = 126;
             // 
-            // dateTimePicker4
+            // ExpFilter
             // 
-            this.dateTimePicker4.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker4.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker4.CalendarTitleBackColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker4.CalendarTitleForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker4.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
-            this.dateTimePicker4.CustomFormat = "dd-MM-yy";
-            this.dateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(601, 48);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(248, 38);
-            this.dateTimePicker4.TabIndex = 127;
+            this.ExpFilter.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpFilter.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.ExpFilter.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.ExpFilter.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.ExpFilter.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.ExpFilter.CustomFormat = "dd-MM-yy";
+            this.ExpFilter.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ExpFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ExpFilter.Location = new System.Drawing.Point(602, 52);
+            this.ExpFilter.Name = "ExpFilter";
+            this.ExpFilter.Size = new System.Drawing.Size(248, 38);
+            this.ExpFilter.TabIndex = 127;
+            // 
+            // EmpIdLbl
+            // 
+            this.EmpIdLbl.AutoSize = true;
+            this.EmpIdLbl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmpIdLbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EmpIdLbl.Location = new System.Drawing.Point(1343, 62);
+            this.EmpIdLbl.Name = "EmpIdLbl";
+            this.EmpIdLbl.Size = new System.Drawing.Size(34, 41);
+            this.EmpIdLbl.TabIndex = 101;
+            this.EmpIdLbl.Text = "1";
             // 
             // Finance
             // 
@@ -885,6 +898,7 @@ namespace DairyFarm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
+            this.Controls.Add(this.EmpIdLbl);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label1);
@@ -969,25 +983,26 @@ namespace DairyFarm
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker ExpDate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker IncDate;
+        private System.Windows.Forms.ComboBox ExpPurpCb;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox ExpAmountTb;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox IncPurpCb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox IncAmountTb;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SaveExpBtn;
+        private System.Windows.Forms.Button SaveIncBtn;
         private Guna.UI2.WinForms.Guna2DataGridView ExpDGV;
         private Guna.UI2.WinForms.Guna2DataGridView IncDGV;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker ExpFilter;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker IncFilter;
+        private System.Windows.Forms.Label EmpIdLbl;
     }
 }
