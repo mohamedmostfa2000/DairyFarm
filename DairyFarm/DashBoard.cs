@@ -94,6 +94,7 @@ namespace DairyFarm
             Con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowTbl", Con);
             SqlDataAdapter sda1 = new SqlDataAdapter("select sum(TotalMilk) from MilkTbl", Con);
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Count(*) from EmployeeTbl", Con);
 
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -101,6 +102,9 @@ namespace DairyFarm
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
             MilkLbl.Text = dt1.Rows[0][0].ToString() + "Liters";
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            EmpNumLbl.Text = dt2.Rows[0][0].ToString();
             Con.Close();
         }
     }
