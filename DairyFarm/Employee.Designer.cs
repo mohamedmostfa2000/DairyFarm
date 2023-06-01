@@ -39,6 +39,8 @@ namespace DairyFarm
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,6 +66,8 @@ namespace DairyFarm
             this.EditBtn = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDGV)).BeginInit();
@@ -181,7 +185,7 @@ namespace DairyFarm
             this.PhoneTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PhoneTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PhoneTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PhoneTb.Location = new System.Drawing.Point(619, 295);
+            this.PhoneTb.Location = new System.Drawing.Point(472, 292);
             this.PhoneTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.PasswordChar = '\0';
@@ -255,7 +259,7 @@ namespace DairyFarm
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(904, 252);
+            this.label14.Location = new System.Drawing.Point(774, 252);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 31);
             this.label14.TabIndex = 106;
@@ -273,7 +277,7 @@ namespace DairyFarm
             this.AddressTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.AddressTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddressTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AddressTb.Location = new System.Drawing.Point(904, 295);
+            this.AddressTb.Location = new System.Drawing.Point(774, 295);
             this.AddressTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddressTb.Name = "AddressTb";
             this.AddressTb.PasswordChar = '\0';
@@ -288,7 +292,7 @@ namespace DairyFarm
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(619, 255);
+            this.label12.Location = new System.Drawing.Point(472, 252);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(78, 31);
             this.label12.TabIndex = 104;
@@ -436,12 +440,47 @@ namespace DairyFarm
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(1074, 252);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 31);
+            this.label4.TabIndex = 125;
+            this.label4.Text = "Password";
+            // 
+            // PasswordTb
+            // 
+            this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTb.CustomizableEdges = customizableEdges7;
+            this.PasswordTb.DefaultText = "";
+            this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.Location = new System.Drawing.Point(1074, 295);
+            this.PasswordTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '\0';
+            this.PasswordTb.PlaceholderText = "";
+            this.PasswordTb.SelectedText = "";
+            this.PasswordTb.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            this.PasswordTb.Size = new System.Drawing.Size(208, 37);
+            this.PasswordTb.TabIndex = 124;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.EditBtn);
@@ -505,5 +544,7 @@ namespace DairyFarm
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
     }
 }

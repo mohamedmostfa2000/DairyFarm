@@ -109,6 +109,7 @@ namespace DairyFarm
             this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PasswordTb.Location = new System.Drawing.Point(612, 405);
             this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '*';
             this.PasswordTb.Size = new System.Drawing.Size(302, 51);
             this.PasswordTb.TabIndex = 6;
             // 
