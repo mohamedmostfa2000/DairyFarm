@@ -56,5 +56,10 @@ namespace DairyFarm
             ob.Show();
             this.Hide();
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
