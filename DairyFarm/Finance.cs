@@ -18,6 +18,7 @@ namespace DairyFarm
             ClearExp();
             populateInc();
             ClearInc();
+            FillEmpId();
 
 
 
@@ -82,9 +83,23 @@ namespace DairyFarm
 
         }
 
+        private void FillEmpId()
+        {
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", Con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
+            Con.Close();
+        }
+
         private void SaveExpBtn_Click(object sender, EventArgs e)
         {
-            if (ExpPurpCb.SelectedIndex == -1 || ExpAmountTb.Text == "" )
+            if (ExpPurpCb.SelectedIndex == -1 || ExpAmountTb.Text == "" || EmpIdCb.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Data!");
             }
@@ -93,7 +108,7 @@ namespace DairyFarm
                 try
                 {
                     Con.Open();
-                    string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + ExpPurpCb.SelectedItem.ToString() + "','" + ExpAmountTb.Text + "'," + EmpIdLbl.Text + ")";
+                    string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + ExpPurpCb.SelectedItem.ToString() + "','" + ExpAmountTb.Text + "'," + EmpIdCb.SelectedValue.ToString() + ")";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     Con.Close();
@@ -145,7 +160,7 @@ namespace DairyFarm
 
         private void SaveIncBtn_Click(object sender, EventArgs e)
         {
-            if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "" )
+            if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "" || EmpIdCb.SelectedIndex==-1 )
             {
                 MessageBox.Show("Missing Data!");
             }
@@ -154,7 +169,7 @@ namespace DairyFarm
                 try
                 {
                     Con.Open();
-                    string Query = "insert into IncomeTbl values ('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "','" + IncAmountTb.Text + "'," + EmpIdLbl.Text + ")";
+                    string Query = "insert into IncomeTbl values ('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "','" + IncAmountTb.Text + "'," + EmpIdCb.SelectedValue.ToString() + ")";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     Con.Close();
@@ -211,6 +226,21 @@ namespace DairyFarm
         private void ExpFilter_ValueChanged(object sender, EventArgs e)
         {
             FilterExp();
+        }
+
+        private void ReloadExp_Click(object sender, EventArgs e)
+        {
+            populateExp();
+        }
+
+        private void ReloadInc_Click(object sender, EventArgs e)
+        {
+            populateInc();
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
