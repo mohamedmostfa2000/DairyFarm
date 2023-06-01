@@ -15,6 +15,7 @@ namespace DairyFarm
         {
             InitializeComponent();
             populateExp();
+            ClearExp();
 
         }
 
@@ -93,6 +94,7 @@ namespace DairyFarm
                     cmd.ExecuteNonQuery();
                     Con.Close();
                     populateExp();
+                    ClearExp();
                     MessageBox.Show("Expenditure Saved Successfully");
 
 
@@ -117,6 +119,12 @@ namespace DairyFarm
             sda.Fill(ds);
             ExpDGV.DataSource = ds.Tables[0];
             Con.Close();
+        }
+
+        private void ClearExp()
+        {
+            ExpAmountTb.Text = "";
+            ExpPurpCb.SelectedIndex = -1;
         }
     }
 }
