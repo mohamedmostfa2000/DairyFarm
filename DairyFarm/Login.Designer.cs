@@ -38,7 +38,7 @@ namespace DairyFarm
             this.PasswordTb = new System.Windows.Forms.TextBox();
             this.ResetLbl = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RoleCb = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -137,19 +137,20 @@ namespace DairyFarm
             this.LoginBtn.TabIndex = 8;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
-            // comboBox1
+            // RoleCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.RoleCb.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RoleCb.FormattingEnabled = true;
+            this.RoleCb.Items.AddRange(new object[] {
             "Admin",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(514, 237);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(223, 49);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "Select Role";
+            this.RoleCb.Location = new System.Drawing.Point(514, 237);
+            this.RoleCb.Name = "RoleCb";
+            this.RoleCb.Size = new System.Drawing.Size(223, 49);
+            this.RoleCb.TabIndex = 9;
+            this.RoleCb.Text = "Select Role";
             // 
             // label5
             // 
@@ -260,7 +261,7 @@ namespace DairyFarm
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(959, 657);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.RoleCb);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.ResetLbl);
             this.Controls.Add(this.PasswordTb);
@@ -292,7 +293,7 @@ namespace DairyFarm
         private System.Windows.Forms.TextBox PasswordTb;
         private System.Windows.Forms.Label ResetLbl;
         private System.Windows.Forms.Button LoginBtn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox RoleCb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
