@@ -169,7 +169,7 @@ namespace DairyFarm
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
-            Inc2DGV.DataSource = ds.Tables[0];
+            IncDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
 

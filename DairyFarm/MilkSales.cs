@@ -79,6 +79,7 @@ namespace DairyFarm
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
                     Con.Close();
+                    SaveTransaction();
                     populate();
                     Clear();
                     MessageBox.Show("Milk Sold Successfully");
@@ -139,6 +140,24 @@ namespace DairyFarm
         private void ClearBtn_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void SaveTransaction()
+        {
+            try
+            {
+                string Sales = "Sales";
+                Con.Open();
+                string Query = "insert into IncomeTbl values ('" + Date.Value.Date + "','" + Sales + "','" + TotalTb.Text + "','" + EmpIdCb.SelectedValue.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(Query, Con);
+                cmd.ExecuteNonQuery();
+      
+                Con.Close();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }
