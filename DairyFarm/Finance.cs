@@ -69,10 +69,37 @@ namespace DairyFarm
             ob.Show();
             this.Hide();
         }
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SaveExpBtn_Click(object sender, EventArgs e)
+        {
+            if (ExpPurpCb.SelectedIndex == -1 || ExpAmountTb.Text == "" )
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into ExpenditureTbl values ('" + ExpDate.Value.Date + "','" + ExpPurpCb.SelectedItem.ToString() + "','" + ExpAmountTb.Text + "'," + EmpIdLbl.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Expenditure Saved Successfully");
+                    Con.Close();
+                   
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }
