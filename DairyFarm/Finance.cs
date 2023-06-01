@@ -131,6 +131,18 @@ namespace DairyFarm
             ExpPurpCb.SelectedIndex = -1;
         }
 
+        private void FilterExp()
+        {
+            Con.Open();
+            string query = "select * from ExpenditureTbl where ExpDate = '" + ExpFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
         private void SaveIncBtn_Click(object sender, EventArgs e)
         {
             if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "" )
@@ -177,6 +189,16 @@ namespace DairyFarm
         {
             IncAmountTb.Text = "";
             IncPurpCb.SelectedIndex = -1;
+        }
+
+        private void IncFilter_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExpFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FilterExp();
         }
     }
 }
