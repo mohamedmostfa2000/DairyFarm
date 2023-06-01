@@ -122,6 +122,7 @@ namespace DairyFarm
             this.ResetLbl.Size = new System.Drawing.Size(98, 45);
             this.ResetLbl.TabIndex = 7;
             this.ResetLbl.Text = "Reset";
+            this.ResetLbl.Click += new System.EventHandler(this.ResetLbl_Click);
             // 
             // LoginBtn
             // 
