@@ -68,6 +68,7 @@ namespace DairyFarm
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.ExpDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -85,7 +86,6 @@ namespace DairyFarm
             this.button2 = new System.Windows.Forms.Button();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -93,7 +93,9 @@ namespace DairyFarm
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,11 +113,11 @@ namespace DairyFarm
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpDGV)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -420,12 +422,22 @@ namespace DairyFarm
             this.panel2.Size = new System.Drawing.Size(1400, 45);
             this.panel2.TabIndex = 96;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1345, 4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 41);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 101;
+            this.pictureBox9.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(803, 62);
+            this.label1.Location = new System.Drawing.Point(803, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 41);
             this.label1.TabIndex = 98;
@@ -434,7 +446,9 @@ namespace DairyFarm
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightGray;
+            this.panel10.Controls.Add(this.dateTimePicker4);
             this.panel10.Controls.Add(this.ExpDGV);
+            this.panel10.Controls.Add(this.label24);
             this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.guna2TextBox1);
             this.panel10.Controls.Add(this.label13);
@@ -444,9 +458,9 @@ namespace DairyFarm
             this.panel10.Controls.Add(this.dateTimePicker1);
             this.panel10.Controls.Add(this.label16);
             this.panel10.Controls.Add(this.label3);
-            this.panel10.Location = new System.Drawing.Point(340, 121);
+            this.panel10.Location = new System.Drawing.Point(340, 92);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1037, 395);
+            this.panel10.Size = new System.Drawing.Size(1037, 424);
             this.panel10.TabIndex = 99;
             // 
             // ExpDGV
@@ -472,7 +486,7 @@ namespace DairyFarm
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ExpDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ExpDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ExpDGV.Location = new System.Drawing.Point(370, 65);
+            this.ExpDGV.Location = new System.Drawing.Point(370, 94);
             this.ExpDGV.Name = "ExpDGV";
             this.ExpDGV.ReadOnly = true;
             this.ExpDGV.RowHeadersVisible = false;
@@ -599,7 +613,7 @@ namespace DairyFarm
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.Teal;
-            this.label16.Location = new System.Drawing.Point(579, 9);
+            this.label16.Location = new System.Drawing.Point(579, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(250, 45);
             this.label16.TabIndex = 101;
@@ -620,10 +634,10 @@ namespace DairyFarm
             // 
             this.panel11.BackColor = System.Drawing.Color.LightGray;
             this.panel11.Controls.Add(this.IncDGV);
+            this.panel11.Controls.Add(this.dateTimePicker3);
             this.panel11.Controls.Add(this.button2);
             this.panel11.Controls.Add(this.guna2TextBox2);
             this.panel11.Controls.Add(this.label23);
-            this.panel11.Controls.Add(this.comboBox3);
             this.panel11.Controls.Add(this.label22);
             this.panel11.Controls.Add(this.comboBox2);
             this.panel11.Controls.Add(this.label14);
@@ -735,21 +749,12 @@ namespace DairyFarm
             this.label23.TabIndex = 123;
             this.label23.Text = "Amount";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(601, 63);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(248, 39);
-            this.comboBox3.TabIndex = 122;
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(530, 66);
+            this.label22.Location = new System.Drawing.Point(530, 70);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 31);
             this.label22.TabIndex = 121;
@@ -823,15 +828,46 @@ namespace DairyFarm
             this.label2.TabIndex = 99;
             this.label2.Text = "Incomes";
             // 
-            // pictureBox9
+            // label24
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1345, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(52, 41);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 101;
-            this.pictureBox9.TabStop = false;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label24.Location = new System.Drawing.Point(530, 54);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 31);
+            this.label24.TabIndex = 125;
+            this.label24.Text = "Filter";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker3.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker3.CustomFormat = "dd-MM-yy";
+            this.dateTimePicker3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(601, 64);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(248, 38);
+            this.dateTimePicker3.TabIndex = 126;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.CalendarFont = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker4.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dateTimePicker4.CalendarTitleBackColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CalendarTitleForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CalendarTrailingForeColor = System.Drawing.Color.Maroon;
+            this.dateTimePicker4.CustomFormat = "dd-MM-yy";
+            this.dateTimePicker4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(601, 48);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(248, 38);
+            this.dateTimePicker4.TabIndex = 127;
             // 
             // Finance
             // 
@@ -874,13 +910,13 @@ namespace DairyFarm
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExpDGV)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -932,7 +968,6 @@ namespace DairyFarm
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label23;
@@ -941,5 +976,8 @@ namespace DairyFarm
         private Guna.UI2.WinForms.Guna2DataGridView ExpDGV;
         private Guna.UI2.WinForms.Guna2DataGridView IncDGV;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }
