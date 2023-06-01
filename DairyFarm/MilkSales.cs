@@ -16,6 +16,7 @@ namespace DairyFarm
             InitializeComponent();
             FillEmpId();
             populate();
+            Clear();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -99,6 +100,16 @@ namespace DairyFarm
         {
             int Total = Convert.ToInt32(PriceTb.Text) + Convert.ToInt32(QuantityTb.Text);
             TotalTb.Text = "" + Total;
+        }
+
+        private void Clear()
+        {
+            PriceTb.Text = "";
+            QuantityTb.Text = "";
+            NameTb.Text = "";
+            PhoneTb.Text = "";
+            TotalTb.Text = "";
+            EmpIdCb.SelectedIndex = -1;
         }
     }
 }

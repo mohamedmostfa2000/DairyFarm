@@ -40,6 +40,7 @@ namespace DairyFarm
                     PhoneTb.Text = "";
                     AddressTb.Text = "";
                     GenCb.SelectedIndex = -1;
+                    key = 0;
 
                 }
         
