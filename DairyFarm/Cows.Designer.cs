@@ -103,7 +103,7 @@ namespace DairyFarm
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.CowsDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CowSearchTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -829,27 +829,28 @@ namespace DairyFarm
             this.CowsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.CowsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CowsDGV_CellContentClick);
             // 
-            // guna2TextBox1
+            // CowSearchTb
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.CustomizableEdges = customizableEdges19;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(549, 462);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            this.guna2TextBox1.Size = new System.Drawing.Size(208, 37);
-            this.guna2TextBox1.TabIndex = 29;
+            this.CowSearchTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowSearchTb.CustomizableEdges = customizableEdges19;
+            this.CowSearchTb.DefaultText = "";
+            this.CowSearchTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CowSearchTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CowSearchTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CowSearchTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CowSearchTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowSearchTb.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CowSearchTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CowSearchTb.Location = new System.Drawing.Point(549, 462);
+            this.CowSearchTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CowSearchTb.Name = "CowSearchTb";
+            this.CowSearchTb.PasswordChar = '\0';
+            this.CowSearchTb.PlaceholderText = "";
+            this.CowSearchTb.SelectedText = "";
+            this.CowSearchTb.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            this.CowSearchTb.Size = new System.Drawing.Size(208, 37);
+            this.CowSearchTb.TabIndex = 29;
+            this.CowSearchTb.TextChanged += new System.EventHandler(this.CowSearchTb_TextChanged);
             // 
             // label22
             // 
@@ -869,7 +870,7 @@ namespace DairyFarm
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 970);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.CowSearchTb);
             this.Controls.Add(this.CowsDGV);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.ClearBtn);
@@ -987,7 +988,7 @@ namespace DairyFarm
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox CowSearchTb;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.PictureBox pictureBox9;
     }

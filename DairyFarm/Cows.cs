@@ -219,9 +219,26 @@ namespace DairyFarm
             }
         }
 
+        private void SearchCow()
+        {
+            Con.Open();
+            string query = "select * from CowTbl where CowName like '%" + CowSearchTb.Text + "%'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowsDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CowSearchTb_TextChanged(object sender, EventArgs e)
+        {
+            SearchCow();
         }
     }
 }
