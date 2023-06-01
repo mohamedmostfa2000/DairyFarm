@@ -126,5 +126,30 @@ namespace DairyFarm
             ExpAmountTb.Text = "";
             ExpPurpCb.SelectedIndex = -1;
         }
+
+        private void SaveIncBtn_Click(object sender, EventArgs e)
+        {
+            if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "" )
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into IncomeTbl values ('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "','" + IncAmountTb.Text + "'," + EmpIdLbl.Text + ")";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Income Saved Successfully");
+                    Con.Close();
+                    
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
     }
 }
