@@ -15,6 +15,7 @@ namespace DairyFarm
         {
             InitializeComponent();
             FillEmpId();
+            populate();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -77,6 +78,20 @@ namespace DairyFarm
             dt.Load(Rdr);
             EmpIdCb.ValueMember = "EmpId";
             EmpIdCb.DataSource = dt;
+            Con.Close();
+        }
+
+
+        private void populate()
+        {
+            
+            Con.Open();
+            string query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            SalesDGV.DataSource = ds.Tables[0];
             Con.Close();
         }
     }
