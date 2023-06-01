@@ -16,6 +16,8 @@ namespace DairyFarm
             InitializeComponent();
             populateExp();
             ClearExp();
+            populateInc();
+
 
         }
 
@@ -141,15 +143,31 @@ namespace DairyFarm
                     string Query = "insert into IncomeTbl values ('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "','" + IncAmountTb.Text + "'," + EmpIdLbl.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, Con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Income Saved Successfully");
                     Con.Close();
-                    
+                    populateInc();
+                    MessageBox.Show("Income Saved Successfully");
+
+
+
                 }
                 catch (Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void populateInc()
+        {
+            
+            Con.Open();
+            string query = "select * from IncomeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncDGV.DataSource = ds.Tables[0];
+            Con.Close();
         }
     }
 }
