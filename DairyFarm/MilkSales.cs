@@ -61,11 +61,35 @@ namespace DairyFarm
             this.Hide();
         }
 
+
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || NameTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "")
+            {
+                MessageBox.Show("Missing Data!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+                    string Query = "insert into MilkSalesTbl values ('" + Date.Value.Date + "','" + PriceTb.Text + "','" + NameTb.Text + "','" + PhoneTb.Text + "'," + EmpIdCb.SelectedValue.ToString() + "," + QuantityTb.Text + ",'" + TotalTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, Con);
+                    cmd.ExecuteNonQuery();
+                    Con.Close();
+                    populate();
+                    Clear();
+                    MessageBox.Show("Milk Sold Successfully");
 
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\DairyFarm\DataBase\DairyFarmDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
         private void FillEmpId()
@@ -98,7 +122,7 @@ namespace DairyFarm
 
         private void QuantityTb_Leave(object sender, EventArgs e)
         {
-            int Total = Convert.ToInt32(PriceTb.Text) + Convert.ToInt32(QuantityTb.Text);
+            int Total = Convert.ToInt32(PriceTb.Text) * Convert.ToInt32(QuantityTb.Text);
             TotalTb.Text = "" + Total;
         }
 
@@ -110,6 +134,11 @@ namespace DairyFarm
             PhoneTb.Text = "";
             TotalTb.Text = "";
             EmpIdCb.SelectedIndex = -1;
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }
